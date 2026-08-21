@@ -1,0 +1,71 @@
+base-ancient-key:
+  Display: "Unset"
+  Id: FIREWORK_STAR
+  Options:
+   PreventAnvil: true
+   PreventEnchanting: true
+   Unbreakable: true
+  Firework:
+    Colors:
+    - 0,0,0
+  Hide:
+  - UNBREAKABLE
+  - POTION_EFFECTS
+  - DYE
+
+ancient-key-desert:
+  Template: base-ancient-key
+  Display: Ancient Key
+#  Lore: 
+  Model: 1
+  Generation:
+    Model: materials/ancient_key_desert
+
+ancient-key-void:
+  Template: base-ancient-key
+  Display: Ancient Key
+#  Lore: 
+  Model: 2
+  Generation:
+    Model: materials/ancient_key_void
+
+ancient-key-magma:
+  Template: base-ancient-key
+  Display: Ancient Key
+#  Lore: 
+  Model: 3
+  Generation:
+    Model: materials/ancient_key_magma
+
+ancient-key-mossy:
+  Template: base-ancient-key
+  Display: Ancient Key
+#  Lore: 
+  Model: 4
+  Generation:
+    Model: materials/ancient_key_mossy
+
+ancient-key-stone:
+  Template: base-ancient-key
+  Display: Ancient Key
+#  Lore: 
+  Model: 5
+  Generation:
+    Model: materials/ancient_key_stone
+
+ancient-key-terracotta:
+  Template: base-ancient-key
+  Display: Ancient Key
+#  Lore: 
+  Model: 6
+  Generation:
+    Model: materials/ancient_key_terracotta
+
+ancient-key-hell:
+  Template: base-ancient-key
+  Display: Ancient Key
+#  Lore: 
+  Model: 7
+  Generation:
+    Model: materials/ancient_key_hell
+# eqM303fcPR6HGEaXWjvvzFYO4Q4S85lUe2VowyGKMZhEVgaEGHm7BgbI4VG7ZisHZR0aOUe4VzyUc6IUOIag4Jzbsm7DJSQf5TAL7w1tPLU=

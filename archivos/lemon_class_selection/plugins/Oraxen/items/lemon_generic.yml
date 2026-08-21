@@ -1,0 +1,9 @@
+invisible_item:
+  Pack:
+    custom_model_data: 2
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+    - required/particle
+  displayname: invisible_item
+  material: YELLOW_DYE

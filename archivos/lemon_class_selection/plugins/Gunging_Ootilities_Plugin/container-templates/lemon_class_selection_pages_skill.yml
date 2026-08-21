@@ -1,0 +1,149 @@
+lemon_class_selection_page_1_skill:
+  NumberOfRows: 3
+  ContainerType: STATION
+  DisplayTitle: '<shift:-64> <glyph:class_selection_skillinfo>'
+  Contents:
+  - SKILLS 0||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD2||NME<#66ccff>Back||COCgoop
+    mythicmobs runSkillAs lemon_class_selection_open_0 %player%||
+  - SLOT_1 10||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD100||NME<#b3d9ff>&lMagic Missile||LRE000&7basic arcane spell||LRE001<#ccccff>------------------||LRE002&fthrows a magic bullet||LRE003&fthat deal 91% of your||LRE004&fweapon's damage (&9✦&f).||
+  - SLOT_2 11||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD101||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_3 12||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD102||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_4 13||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD103||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_5 14||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#ff3300>&lLocked||LRE000&8no skill||
+  - SLOT_6 15||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#ff3300>&lLocked||LRE000&8no skill||
+  - SLOT_7 16||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#ff3300>&lLocked||LRE000&8no skill||
+  
+lemon_class_selection_page_2_skill:
+  NumberOfRows: 3
+  ContainerType: STATION
+  DisplayTitle: '<shift:-64> <glyph:class_selection_skillinfo>'
+  Contents:
+  - SKILLS 0||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD2||NME<#66ccff>Back||COCgoop
+    mythicmobs runSkillAs lemon_class_selection_open_2 %player%||
+  - SLOT_1 10||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_2 11||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_3 12||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_4 13||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_5 14||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_6 15||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_7 16||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  
+lemon_class_selection_page_3_skill:
+  NumberOfRows: 3
+  ContainerType: STATION
+  DisplayTitle: '<shift:-64> <glyph:class_selection_skillinfo>'
+  Contents:
+  - SKILLS 0||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD2||NME<#66ccff>Back||COCgoop
+    mythicmobs runSkillAs lemon_class_selection_open_3 %player%||
+  - SLOT_1 10||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_2 11||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_3 12||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_4 13||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_5 14||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_6 15||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_7 16||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  
+lemon_class_selection_page_4_skill:
+  NumberOfRows: 3
+  ContainerType: STATION
+  DisplayTitle: '<shift:-64> <glyph:class_selection_skillinfo>'
+  Contents:
+  - SKILLS 0||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD2||NME<#66ccff>Back||COCgoop
+    mythicmobs runSkillAs lemon_class_selection_open_4 %player%||
+  - SLOT_1 10||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_2 11||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_3 12||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_4 13||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_5 14||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_6 15||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_7 16||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  
+lemon_class_selection_page_5_skill:
+  NumberOfRows: 3
+  ContainerType: STATION
+  DisplayTitle: '<shift:-64> <glyph:class_selection_skillinfo>'
+  Contents:
+  - SKILLS 0||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD2||NME<#66ccff>Back||COCgoop
+    mythicmobs runSkillAs lemon_class_selection_open_5 %player%||
+  - SLOT_1 10||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_2 11||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_3 12||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_4 13||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_5 14||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_6 15||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_7 16||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  
+lemon_class_selection_page_6_skill:
+  NumberOfRows: 3
+  ContainerType: STATION
+  DisplayTitle: '<shift:-64> <glyph:class_selection_skillinfo>'
+  Contents:
+  - SKILLS 0||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD2||NME<#66ccff>Back||COCgoop
+    mythicmobs runSkillAs lemon_class_selection_open_6 %player%||
+  - SLOT_1 10||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_2 11||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_3 12||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_4 13||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_5 14||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_6 15||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_7 16||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  
+lemon_class_selection_page_7_skill:
+  NumberOfRows: 3
+  ContainerType: STATION
+  DisplayTitle: '<shift:-64> <glyph:class_selection_skillinfo>'
+  Contents:
+  - SKILLS 0||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD2||NME<#66ccff>Back||COCgoop
+    mythicmobs runSkillAs lemon_class_selection_open_7 %player%||
+  - SLOT_1 10||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_2 11||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_3 12||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_4 13||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_5 14||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_6 15||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_7 16||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  
+lemon_class_selection_page_8_skill:
+  NumberOfRows: 3
+  ContainerType: STATION
+  DisplayTitle: '<shift:-64> <glyph:class_selection_skillinfo>'
+  Contents:
+  - SKILLS 0||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD2||NME<#66ccff>Back||COCgoop
+    mythicmobs runSkillAs lemon_class_selection_open_8 %player%||
+  - SLOT_1 10||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_2 11||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_3 12||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_4 13||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_5 14||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_6 15||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_7 16||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  
+lemon_class_selection_page_9_skill:
+  NumberOfRows: 3
+  ContainerType: STATION
+  DisplayTitle: '<shift:-64> <glyph:class_selection_skillinfo>'
+  Contents:
+  - SKILLS 0||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD2||NME<#66ccff>Back||COCgoop
+    mythicmobs runSkillAs lemon_class_selection_open_9 %player%||
+  - SLOT_1 10||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_2 11||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_3 12||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_4 13||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_5 14||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_6 15||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_7 16||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  
+lemon_class_selection_page_10_skill:
+  NumberOfRows: 3
+  ContainerType: STATION
+  DisplayTitle: '<shift:-64> <glyph:class_selection_skillinfo>'
+  Contents:
+  - SKILLS 0||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD2||NME<#66ccff>Back||COCgoop
+    mythicmobs runSkillAs lemon_class_selection_open_10 %player%||
+  - SLOT_1 10||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_2 11||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_3 12||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_4 13||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_5 14||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_6 15||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||
+  - SLOT_7 16||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD99||NME<#66ccff>&lSkill name||LRE000&8subtitle||LRE001<#ccccff>------------------||LRE002&7Skill lore Skill lore||

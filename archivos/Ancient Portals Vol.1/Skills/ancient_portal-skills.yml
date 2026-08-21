@@ -1,0 +1,183 @@
+ancient_portal-init:
+  Skills:
+# Set Ancient Portal Variables
+  - setvar{var=caster.debug;val=<caster.var.debug|false>;type=STRING;save=true}
+  - setvar{var=caster.executecommand;val=<caster.var.executecommand|kill>;type=STRING;save=true}
+  - setvar{var=caster.close_upon_entry;val=<caster.var.close_upon_entry|false>;type=STRING;save=true}
+  - setvar{var=caster.close_when_inactive;val=<caster.var.close_when_inactive|false>;type=STRING;save=true}
+  - setvar{var=caster.only_keyuser_canenter;val=<caster.var.only_keyuser_canenter|false>;type=STRING;save=true}
+  - setvar{var=caster.varient;val=<caster.var.varient|stone>;type=STRING;save=true}
+  - setvar{var=caster.material;val=<caster.var.material|stone>;type=STRING;save=true}
+  - setvar{var=caster.color;val=<caster.var.color|#ffffff>;type=STRING;save=true}
+  
+  - skill{s=ancient_portal-updatemodels}
+
+ancient_portal-updatemodels:
+  Skills:
+  - model{m=ancient_portal_stone;r=true}
+  - model{m=ancient_portal_mossy;r=true}
+  - model{m=ancient_portal_desert;r=true}
+  - model{m=ancient_portal_terracotta;r=true}
+  - model{m=ancient_portal_magma;r=true}  
+  - model{m=ancient_portal_void;r=true}    
+  
+  - model{mid=ancient_portal_<caster.var.varient>;partid=bone;scale=1;usm=true}
+  - cullconfig{vc=false;bkc=false;blc=false}
+  - brightness{mid=ancient_portal_<caster.var.varient>;pid=portal_1;em=true;b=15;s=15}
+  - brightness{mid=ancient_portal_<caster.var.varient>;pid=portal_2;em=true;b=15;s=15}
+  - brightness{mid=ancient_portal_<caster.var.varient>;pid=portal_3;em=true;b=15;s=15}
+  - brightness{mid=ancient_portal_<caster.var.varient>;pid=ap;em=false;b=15;s=15}
+
+  - setstance{s=deactivated} ?stance{s=default}
+  - switch{condition=stance{s=<case>;str=true};
+    cases=
+       case activated=[ - state{mid=ancient_portal_<caster.var.varient>;s=activate_idle;priority=1} ]
+       case deactivated=[ - state{mid=ancient_portal_<caster.var.varient>;s=non_activated_idle;priority=1} ]
+    } @self
+  - skill{s=ancient_portal-debug}
+
+# In-Game Configuration  
+ancient_portal-configure:
+  TriggerConditions:
+  - haspermission{p=mythic} true
+  Skills:
+  - look{force=true;immediately=true} ?~crouching
+  - onChat{auraname=editconfig;d="20*10";ma=true;bartimer=true;
+    bartimertext="Say Option to Configure in Chat";
+    onChat=[
+    - message{m="Editing Setting <skill.var.input>"}
+    - skill{s=ancient_portal-setsetting;setting=<skill.var.input>;duration=20} @trigger
+    - removeaura{aura=editconfig}
+    ]} @trigger
+
+ancient_portal-setsetting:
+  TriggerConditions:
+  - haspermission{p=mythic} true
+  Skills:
+  - onChat{auraname=setsetting;d="<skill.duration|5>*20";ma=true;bartimer=true;
+    bartimertext="Configuring Setting <skill.setting>";
+    onChat=[
+    - setvar{var=caster.<skill.setting>;val="<skill.var.input>";type=STRING;save=true} @self
+    - message{m="Setting Config Option <skill.setting> to <caster.var.<skill.setting>>"}
+    - skill{s=ancient_portal-updatemodels} @self
+    - removeaura{aura=setsetting}
+    ]} @trigger
+
+ancient_portal-debug:
+  Conditions:
+  - varequals{var=caster.debug;val=true}
+  Skills:
+  - message{m="ancient_portal_<caster.var.varient> <caster.stance> <caster.var.color> <caster.var.close_upon_entry> <caster.var.close_when_inactive> <caster.var.only_keyuser_canenter>"} @Server ?varequals{var=caster.debug;value="true"} @server  
+
+ancient_portal-activate:
+  Skills:
+  - aura{auraname="transition";ma=true;d="11*20";
+    os=[ 
+    - setstance{s=transition}
+    - state{mid=ancient_portal_<caster.var.varient>;s=activate_animation;loop=hold;lo=10;priority=1}
+    ];
+    ot=[
+    - skill{s=ancient_portal-runeactivate;part=stone_8_ap} ?varequals{var=skill.aura-duration;value=200}
+    - skill{s=ancient_portal-runeactivate;part=stone_6_ap} ?varequals{var=skill.aura-duration;value=180}
+    - skill{s=ancient_portal-runeactivate;part=stone_3_ap} ?varequals{var=skill.aura-duration;value=160}
+    - skill{s=ancient_portal-runeactivate;part=stone_1_ap} ?varequals{var=skill.aura-duration;value=140}
+    - skill{s=ancient_portal-open_effect;part=ap} ?varequals{var=skill.aura-duration;value=135}
+    - e:p{p=reddust;color=<caster.var.color>;hS=0.5;vS=0.5;a=5;size=1;cd=0.15} ?varinrange{var=skill.aura-duration;value=<135} @modelpart{mid=ancient_portal_<caster.var.varient>;pid=ap;em=false}
+    ];
+    oe=[ 
+    - setstance{s=activated} 
+    - state{mid=ancient_portal_<caster.var.varient>;s=activate_idle;loop=loop;li=10;priority=1}
+    - message{m="<caster.name> activated"} @Server ?varequals{var=caster.debug;value="true"}
+    ]} @self
+
+ancient_portal-deactivate:
+  Skills:
+  - aura{auraname="transition";ma=true;d="5*20";
+    os=[ 
+    - setstance{s=transition}
+    - state{mid=ancient_portal_<caster.var.varient>;s=close_animation;loop=hold;lo=10;priority=1}
+    ];
+    ot=[
+    - skill{s=ancient_portal-close_effect;part=bn} ?varequals{var=skill.aura-duration;value=40}
+    ];
+    oe=[ 
+    - setstance{s=deactivated} 
+    - state{mid=ancient_portal_<caster.var.varient>;s=non_activated_idle;li=10;loop=loop;priority=1}
+    - sudoskill{s=ancient_altar-deactivate;cat=true} @uuid{u=<caster.var.paireduuid>} ?varequals{var=caster.close_upon_entry;value="true"}
+    - message{m="<caster.name> deactivated"} @Server ?varequals{var=caster.debug;value="true"}
+    ]} @self
+
+ancient_portal-runeactivate:
+  Skills:
+  - skill{s=[
+    - e:p{p=reddust;color=<caster.var.color>;hS=0.5;vS=0.5;a=10;size=1;repeat=2;repeatInterval=3}
+    - e:p{p=block;material=stone;a=15;hS=0.5;vS=0.5;repeat=1;repeatInterval=4}
+    - sound{s=minecraft:block.enchantment_table.use;v=1;p=0.75}
+    - sound{s=minecraft:entity.allay.item_thrown;v=1;p=0}
+    ]} @modelpart{mid=ancient_portal_<caster.var.varient>;pid=<skill.part>;em=false}
+
+ancient_portal-open_effect:
+  Skills:
+  - skill{s=[
+    - sound{s=minecraft:block.portal.ambient;v=1;p=1}
+    - sound{s=minecraft:entity.camel.eat;v=1;p=0;repeat=2;repeatInterval=4}
+    - sound{s=minecraft:entity.armadillo.eat;v=1;p=0;repeat=2;repeatInterval=4}
+    - sound{s=minecraft:block.tuff.place;v=1;p=0;repeat=2;repeatInterval=4}
+    - sound{s=minecraft:block.tuff.step;v=1;p=0;repeat=3;repeatInterval=3}
+    - e:p{p=block;material=stone;a=5;hS=0.5;vS=0.5;repeat=4;repeatInterval=3}
+    - sound{s=minecraft:block.enchantment_table.use;v=1;p=0.75}
+    - sound{s=minecraft:entity.allay.item_thrown;v=1;p=0}
+    - delay 2
+    - sound{s=minecraft:entity.elder_guardian.ambient;v=1;p=2}
+    - sound{s=minecraft:entity.evoker.prepare_summon;v=1;p=0}
+    - delay 10
+    - sound{s=minecraft:entity.armor_stand.break;v=1;p=1}
+    - sound{s=minecraft:entity.evoker.cast_spell;v=1;p=0}
+    - sound{s=minecraft:entity.evoker.prepare_attack;v=1;p=0}
+    ]} @modelpart{mid=ancient_portal_<caster.var.varient>;pid=<skill.part>;em=false}
+
+ancient_portal-close_effect:
+  Skills:
+  - skill{s=[
+    - sound{s=minecraft:entity.camel.eat;v=1;p=0;repeat=2;repeatInterval=8}
+    - sound{s=minecraft:entity.armadillo.eat;v=1;p=0;repeat=2;repeatInterval=8}
+    - sound{s=minecraft:block.tuff.place;v=1;p=0;repeat=2;repeatInterval=8}
+    - sound{s=minecraft:block.tuff.step;v=1;p=0;repeat=3;repeatInterval=5}
+    - e:p{p=block;material=stone;a=2;hS=0.3;vS=0.3;repeat=4;repeatInterval=5}
+    - delay 2
+    - sound{s=minecraft:entity.elder_guardian.ambient;v=1;p=2}
+    - sound{s=minecraft:entity.evoker.prepare_summon;v=1;p=0}
+    ]} @modelpart{mid=ancient_portal_<caster.var.varient>;pid=<skill.part>;em=false}
+
+ancient_portal-tick:
+  Conditions:
+  - stance{s=deactivated} false
+  - stance{s=activated}
+  Skills:
+  - totem{i=1;md=10;hR=2;vr=2;drawhitbox=false;
+    oh=[ 
+    - setvar{var=skill.entering;val=<target.uuid>;type=STRING}
+    - skill{s=ancient_portal-enter} 
+    ]} @selflocation{yo=2}
+  - sound{s=minecraft:block.portal.ambient;v=0.7;p=1;cd=12}
+  - e:p{p=reddust;color=<caster.var.color|#ffffff>;a=1;size=1.2;vs=0.5;hs=0.5;repeat=3;repeatinterval=3} @modelpart{mid=ancient_portal_<caster.var.varient>;pid=ap;em=false}
+  - skill{s=ancient_portal-deactivate} @self ?playersinradius{a=0;r=20} ?!stance{s=transition} ?varequals{var=caster.close_when_inactive;val="true"}
+  - teleport @spawnlocation
+
+ancient_portal-enter:
+  Skills:
+  - skill{s=ancient_portal-teleport} ?varequals{var=caster.only_keyuser_canenter;val="true"} ?stringequals{val1=<skill.var.entering>;val2=<caster.var.lastactivateer>}
+  - skill{s=ancient_portal-noentry} ?varequals{var=caster.only_keyuser_canenter;val="true"} ?!stringequals{val1=<skill.var.entering>;val2=<caster.var.lastactivateer>}
+  - skill{s=ancient_portal-teleport} ?varequals{var=caster.only_keyuser_canenter;val="false"}
+
+ancient_portal-teleport:
+  Skills:
+  - message{m="<skill.var.entering> <caster.var.lastactivateer>"} ?varequals{var=caster.debug;value="true"}
+  - command{c="<caster.var.executecommand> <target.name>";asTarget=true;asOp=true}
+  - skill{s=ancient_portal-deactivate} @self ?varequals{var=caster.close_upon_entry;val="true"}
+  - sound{s=minecraft:block.portal.travel;cd=1;delay=3}
+  
+ancient_portal-noentry:
+  Skills:
+  - message{m="<dark_gray>[<red>!<dark_gray>] <gray>Only the player who activated this <white>Ancient Portal <gray>can enter!"}
+  - throw{v=8;vy=4}

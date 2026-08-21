@@ -1,0 +1,14 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/paper"
+    },
+    "overrides": [
+		{"predicate": {"custom_model_data":1}, "model": "littleroom_npcpack2:adventurerhelmet"},
+		{"predicate": {"custom_model_data":2}, "model": "littleroom_npcpack2:kingsceptre"},
+		{"predicate": {"custom_model_data":3}, "model": "littleroom_npcpack2:minerhelmet"},
+		{"predicate": {"custom_model_data":4}, "model": "littleroom_npcpack2:minerpack"},
+		{"predicate": {"custom_model_data":5}, "model": "littleroom_npcpack2:mug"}
+
+        ]
+}

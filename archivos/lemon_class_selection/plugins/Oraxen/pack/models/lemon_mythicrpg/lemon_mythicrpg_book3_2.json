@@ -1,0 +1,29 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "lemon_mythicrpg/lemon_class_selection_book",
+		"particle": "lemon_mythicrpg/lemon_class_selection_book"
+	},
+	"elements": [
+		{
+			"from": [-16, -6, 8],
+			"to": [32, 22, 8],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 4.5, 2.625], "texture": "#0"},
+				"east": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"south": {"uv": [4.5, 8.25, 0, 10.875], "texture": "#0"},
+				"west": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"up": {"uv": [0, 0, 4.5, 2.625], "texture": "#0"},
+				"down": {"uv": [16, 16, 16, 16], "texture": "#0"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"gui": {
+			"translation": [1, 0, 0],
+			"scale": [1.5, 1.5, 1.5]
+		}
+	}
+}

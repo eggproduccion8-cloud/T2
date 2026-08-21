@@ -1,0 +1,2875 @@
+{
+  "files": 714,
+  "sources": [
+    "NPC_Vol1",
+    "NPC_Vol2",
+    "Crates",
+    "Furniture",
+    "TrainingDummy"
+  ],
+  "included_extensions": [
+    ".bbmodel",
+    ".json",
+    ".mcmeta",
+    ".png",
+    ".properties"
+  ],
+  "manifest": [
+    {
+      "path": "NPC_Vol1/ModelEngine/animations/archer.animation.json",
+      "size": 18454
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/animations/blacksmith.animation.json",
+      "size": 16139
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/animations/butcher.animation.json",
+      "size": 19713
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/animations/farmer.animation.json",
+      "size": 20958
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/animations/guard.animation.json",
+      "size": 10859
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/animations/wizard.animation.json",
+      "size": 17450
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/blueprints/archer.bbmodel",
+      "size": 91398
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/blueprints/blacksmith.bbmodel",
+      "size": 71857
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/blueprints/butcher.bbmodel",
+      "size": 66637
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/blueprints/farmer.bbmodel",
+      "size": 68830
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/blueprints/guard.bbmodel",
+      "size": 54226
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/blueprints/guardcyan.bbmodel",
+      "size": 53160
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/blueprints/guardgreen.bbmodel",
+      "size": 53150
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/blueprints/guardorange.bbmodel",
+      "size": 53177
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/blueprints/guardparts.bbmodel",
+      "size": 24702
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/blueprints/guardpink.bbmodel",
+      "size": 53210
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/blueprints/guardpurple.bbmodel",
+      "size": 53184
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/blueprints/guardred.bbmodel",
+      "size": 53184
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/blueprints/guardyellow.bbmodel",
+      "size": 53203
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/blueprints/npcgreeting.bbmodel",
+      "size": 4045
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/blueprints/wizard.bbmodel",
+      "size": 98906
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/resource pack/assets/modelengine/textures/entity/archer.png",
+      "size": 4136
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/resource pack/assets/modelengine/textures/entity/archer.png.mcmeta",
+      "size": 139
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/resource pack/assets/modelengine/textures/entity/blacksmith.png",
+      "size": 4236
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/resource pack/assets/modelengine/textures/entity/blacksmith.png.mcmeta",
+      "size": 139
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/resource pack/assets/modelengine/textures/entity/butcher.png",
+      "size": 3274
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/resource pack/assets/modelengine/textures/entity/butcher.png.mcmeta",
+      "size": 139
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/resource pack/assets/modelengine/textures/entity/farmer.png",
+      "size": 3331
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/resource pack/assets/modelengine/textures/entity/farmer.png.mcmeta",
+      "size": 139
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/resource pack/assets/modelengine/textures/entity/guard.png",
+      "size": 3512
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/resource pack/assets/modelengine/textures/entity/guardcyan.png",
+      "size": 3034
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/resource pack/assets/modelengine/textures/entity/guardgreen.png",
+      "size": 3063
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/resource pack/assets/modelengine/textures/entity/guardorange.png",
+      "size": 3041
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/resource pack/assets/modelengine/textures/entity/guardpink.png",
+      "size": 3057
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/resource pack/assets/modelengine/textures/entity/guardpurple.png",
+      "size": 3038
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/resource pack/assets/modelengine/textures/entity/guardred.png",
+      "size": 3056
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/resource pack/assets/modelengine/textures/entity/guardyellow.png",
+      "size": 3024
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/resource pack/assets/modelengine/textures/entity/guard_e.png",
+      "size": 482
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/resource pack/assets/modelengine/textures/entity/guard_e.png.mcmeta",
+      "size": 35
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/resource pack/assets/modelengine/textures/entity/helloeng.png",
+      "size": 512
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/resource pack/assets/modelengine/textures/entity/wizard.png",
+      "size": 5819
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/resource pack/assets/modelengine/textures/entity/wizard.png.mcmeta",
+      "size": 139
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/resource pack/assets/modelengine/textures/entity/wizard_e.png",
+      "size": 364
+    },
+    {
+      "path": "NPC_Vol1/ModelEngine/resource pack/assets/modelengine/textures/entity/wizard_e.png.mcmeta",
+      "size": 139
+    },
+    {
+      "path": "NPC_Vol1/npcpack_item_resourcepack/assets/littleroom_npc/models/hats/farmer.json",
+      "size": 1910
+    },
+    {
+      "path": "NPC_Vol1/npcpack_item_resourcepack/assets/littleroom_npc/models/hats/wizard.json",
+      "size": 2856
+    },
+    {
+      "path": "NPC_Vol1/npcpack_item_resourcepack/assets/littleroom_npc/models/items/book.json",
+      "size": 3251
+    },
+    {
+      "path": "NPC_Vol1/npcpack_item_resourcepack/assets/littleroom_npc/models/items/butcher_knife.json",
+      "size": 3428
+    },
+    {
+      "path": "NPC_Vol1/npcpack_item_resourcepack/assets/littleroom_npc/models/items/pitchfork.json",
+      "size": 2758
+    },
+    {
+      "path": "NPC_Vol1/npcpack_item_resourcepack/assets/littleroom_npc/models/items/staff.json",
+      "size": 5758
+    },
+    {
+      "path": "NPC_Vol1/npcpack_item_resourcepack/assets/littleroom_npc/models/items/sword.json",
+      "size": 2887
+    },
+    {
+      "path": "NPC_Vol1/npcpack_item_resourcepack/assets/littleroom_npc/textures/archerhead.png",
+      "size": 2990
+    },
+    {
+      "path": "NPC_Vol1/npcpack_item_resourcepack/assets/littleroom_npc/textures/blacksmithhead.png",
+      "size": 4480
+    },
+    {
+      "path": "NPC_Vol1/npcpack_item_resourcepack/assets/littleroom_npc/textures/butcherhead.png",
+      "size": 4264
+    },
+    {
+      "path": "NPC_Vol1/npcpack_item_resourcepack/assets/littleroom_npc/textures/farmerhead.png",
+      "size": 4137
+    },
+    {
+      "path": "NPC_Vol1/npcpack_item_resourcepack/assets/littleroom_npc/textures/guardhead.png",
+      "size": 4091
+    },
+    {
+      "path": "NPC_Vol1/npcpack_item_resourcepack/assets/littleroom_npc/textures/speech1.png",
+      "size": 5182
+    },
+    {
+      "path": "NPC_Vol1/npcpack_item_resourcepack/assets/littleroom_npc/textures/wizardhead.png",
+      "size": 3876
+    },
+    {
+      "path": "NPC_Vol1/npcpack_item_resourcepack/assets/minecraft/font/default.json",
+      "size": 1956
+    },
+    {
+      "path": "NPC_Vol1/npcpack_item_resourcepack/assets/minecraft/models/item/iron_sword.json",
+      "size": 527
+    },
+    {
+      "path": "NPC_Vol1/npcpack_item_resourcepack/assets/minecraft/models/item/paper.json",
+      "size": 282
+    },
+    {
+      "path": "NPC_Vol1/npcpack_item_resourcepack/assets/minecraft/optifine/emissive.properties",
+      "size": 18
+    },
+    {
+      "path": "NPC_Vol1/npcpack_item_resourcepack/pack.mcmeta",
+      "size": 79
+    },
+    {
+      "path": "NPC_Vol1/npcpack_item_resourcepack/pack.png",
+      "size": 18330
+    },
+    {
+      "path": "NPC_Vol2/items_resourcepack/assets/littleroom_npcpack2/models/adventurerhelmet.json",
+      "size": 3329
+    },
+    {
+      "path": "NPC_Vol2/items_resourcepack/assets/littleroom_npcpack2/models/adventurersword.json",
+      "size": 5472
+    },
+    {
+      "path": "NPC_Vol2/items_resourcepack/assets/littleroom_npcpack2/models/kingsceptre.json",
+      "size": 4770
+    },
+    {
+      "path": "NPC_Vol2/items_resourcepack/assets/littleroom_npcpack2/models/minerhelmet.json",
+      "size": 3051
+    },
+    {
+      "path": "NPC_Vol2/items_resourcepack/assets/littleroom_npcpack2/models/minerpack.json",
+      "size": 4447
+    },
+    {
+      "path": "NPC_Vol2/items_resourcepack/assets/littleroom_npcpack2/models/mug.json",
+      "size": 4085
+    },
+    {
+      "path": "NPC_Vol2/items_resourcepack/assets/littleroom_npcpack2/textures/adventurerhead.png",
+      "size": 15009
+    },
+    {
+      "path": "NPC_Vol2/items_resourcepack/assets/littleroom_npcpack2/textures/kinghead.png",
+      "size": 13200
+    },
+    {
+      "path": "NPC_Vol2/items_resourcepack/assets/littleroom_npcpack2/textures/minerhead.png",
+      "size": 14039
+    },
+    {
+      "path": "NPC_Vol2/items_resourcepack/assets/littleroom_npcpack2/textures/piratehead.png",
+      "size": 15248
+    },
+    {
+      "path": "NPC_Vol2/items_resourcepack/assets/littleroom_npcpack2/textures/speech1.png",
+      "size": 4977
+    },
+    {
+      "path": "NPC_Vol2/items_resourcepack/assets/littleroom_npcpack2/textures/tavernhead.png",
+      "size": 11626
+    },
+    {
+      "path": "NPC_Vol2/items_resourcepack/assets/minecraft/font/default.json",
+      "size": 1956
+    },
+    {
+      "path": "NPC_Vol2/items_resourcepack/assets/minecraft/models/items/netherite_sword.json",
+      "size": 230
+    },
+    {
+      "path": "NPC_Vol2/items_resourcepack/assets/minecraft/models/items/paper.json",
+      "size": 546
+    },
+    {
+      "path": "NPC_Vol2/items_resourcepack/assets/minecraft/models/items/potion.json",
+      "size": 242
+    },
+    {
+      "path": "NPC_Vol2/items_resourcepack/assets/minecraft/optifine/emissive.properties",
+      "size": 18
+    },
+    {
+      "path": "NPC_Vol2/items_resourcepack/pack.mcmeta",
+      "size": 79
+    },
+    {
+      "path": "NPC_Vol2/items_resourcepack/pack.png",
+      "size": 18330
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/animations/adventurer.animation.json",
+      "size": 21222
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/animations/bard.animation.json",
+      "size": 13146
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/animations/king.animation.json",
+      "size": 16484
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/animations/miner.animation.json",
+      "size": 20855
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/animations/tavern.animation.json",
+      "size": 14327
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/blueprints/npcgreeting.bbmodel",
+      "size": 4045
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/blueprints/npcpackvol2/adventurer.bbmodel",
+      "size": 106001
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/blueprints/npcpackvol2/anchor.bbmodel",
+      "size": 17863
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/blueprints/npcpackvol2/king.bbmodel",
+      "size": 81690
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/blueprints/npcpackvol2/lootbag.bbmodel",
+      "size": 22564
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/blueprints/npcpackvol2/minecart.bbmodel",
+      "size": 15791
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/blueprints/npcpackvol2/miner.bbmodel",
+      "size": 78862
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/blueprints/npcpackvol2/pirate.bbmodel",
+      "size": 57987
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/blueprints/npcpackvol2/tap.bbmodel",
+      "size": 13870
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/blueprints/npcpackvol2/tavern.bbmodel",
+      "size": 62759
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/blueprints/npcpackvol2/throne.bbmodel",
+      "size": 28410
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/resource pack/assets/modelengine/textures/entity/adventurer.png",
+      "size": 5206
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/resource pack/assets/modelengine/textures/entity/anchor.png",
+      "size": 1915
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/resource pack/assets/modelengine/textures/entity/helloeng.png",
+      "size": 512
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/resource pack/assets/modelengine/textures/entity/king.png",
+      "size": 5583
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/resource pack/assets/modelengine/textures/entity/lootbag.png",
+      "size": 3430
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/resource pack/assets/modelengine/textures/entity/minecart.png",
+      "size": 1893
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/resource pack/assets/modelengine/textures/entity/miner.png",
+      "size": 4025
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/resource pack/assets/modelengine/textures/entity/miner_e.png",
+      "size": 241
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/resource pack/assets/modelengine/textures/entity/pirate.png",
+      "size": 7913
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/resource pack/assets/modelengine/textures/entity/pirate.png.mcmeta",
+      "size": 139
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/resource pack/assets/modelengine/textures/entity/tap.png",
+      "size": 2303
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/resource pack/assets/modelengine/textures/entity/tavern.png",
+      "size": 7680
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/resource pack/assets/modelengine/textures/entity/tavern.png.mcmeta",
+      "size": 139
+    },
+    {
+      "path": "NPC_Vol2/plugins/ModelEngine/resource pack/assets/modelengine/textures/entity/throne.png",
+      "size": 4754
+    },
+    {
+      "path": "Crates/Crates Pack/Blockbench files/crate_1.bbmodel",
+      "size": 29280
+    },
+    {
+      "path": "Crates/Crates Pack/Blockbench files/crate_2.bbmodel",
+      "size": 40235
+    },
+    {
+      "path": "Crates/Crates Pack/Blockbench files/crate_3.bbmodel",
+      "size": 45325
+    },
+    {
+      "path": "Crates/Crates Pack/Blockbench files/crate_4.bbmodel",
+      "size": 72757
+    },
+    {
+      "path": "Crates/Crates Pack/Blockbench files/key_1.bbmodel",
+      "size": 6420
+    },
+    {
+      "path": "Crates/Crates Pack/Blockbench files/key_2.bbmodel",
+      "size": 5993
+    },
+    {
+      "path": "Crates/Crates Pack/Blockbench files/key_3.bbmodel",
+      "size": 4795
+    },
+    {
+      "path": "Crates/Crates Pack/Blockbench files/key_4.bbmodel",
+      "size": 3951
+    },
+    {
+      "path": "Crates/Crates Pack/ItemsAdder/contents/crates1/resourcepack/assets/crates1/models/lvl1_crate.json",
+      "size": 9147
+    },
+    {
+      "path": "Crates/Crates Pack/ItemsAdder/contents/crates1/resourcepack/assets/crates1/models/lvl1_key.json",
+      "size": 4816
+    },
+    {
+      "path": "Crates/Crates Pack/ItemsAdder/contents/crates1/resourcepack/assets/crates1/models/lvl2_crate.json",
+      "size": 16055
+    },
+    {
+      "path": "Crates/Crates Pack/ItemsAdder/contents/crates1/resourcepack/assets/crates1/models/lvl2_key.json",
+      "size": 4298
+    },
+    {
+      "path": "Crates/Crates Pack/ItemsAdder/contents/crates1/resourcepack/assets/crates1/models/lvl3_crate.json",
+      "size": 18992
+    },
+    {
+      "path": "Crates/Crates Pack/ItemsAdder/contents/crates1/resourcepack/assets/crates1/models/lvl3_key.json",
+      "size": 3645
+    },
+    {
+      "path": "Crates/Crates Pack/ItemsAdder/contents/crates1/resourcepack/assets/crates1/models/lvl4_crate.json",
+      "size": 37668
+    },
+    {
+      "path": "Crates/Crates Pack/ItemsAdder/contents/crates1/resourcepack/assets/crates1/models/lvl4_key.json",
+      "size": 2676
+    },
+    {
+      "path": "Crates/Crates Pack/ItemsAdder/contents/crates1/resourcepack/assets/crates1/textures/lvl1_crate.png",
+      "size": 1690
+    },
+    {
+      "path": "Crates/Crates Pack/ItemsAdder/contents/crates1/resourcepack/assets/crates1/textures/lvl1_key.png",
+      "size": 241
+    },
+    {
+      "path": "Crates/Crates Pack/ItemsAdder/contents/crates1/resourcepack/assets/crates1/textures/lvl2_crate.png",
+      "size": 2682
+    },
+    {
+      "path": "Crates/Crates Pack/ItemsAdder/contents/crates1/resourcepack/assets/crates1/textures/lvl2_key.png",
+      "size": 389
+    },
+    {
+      "path": "Crates/Crates Pack/ItemsAdder/contents/crates1/resourcepack/assets/crates1/textures/lvl3_crate.png",
+      "size": 2615
+    },
+    {
+      "path": "Crates/Crates Pack/ItemsAdder/contents/crates1/resourcepack/assets/crates1/textures/lvl3_key.png",
+      "size": 216
+    },
+    {
+      "path": "Crates/Crates Pack/ItemsAdder/contents/crates1/resourcepack/assets/crates1/textures/lvl4_crate.png",
+      "size": 3096
+    },
+    {
+      "path": "Crates/Crates Pack/ItemsAdder/contents/crates1/resourcepack/assets/crates1/textures/lvl4_key.png",
+      "size": 212
+    },
+    {
+      "path": "Crates/Crates Pack/Oraxen/pack/models/default/lvl1_crate.json",
+      "size": 9147
+    },
+    {
+      "path": "Crates/Crates Pack/Oraxen/pack/models/default/lvl1_key.json",
+      "size": 4816
+    },
+    {
+      "path": "Crates/Crates Pack/Oraxen/pack/models/default/lvl2_crate.json",
+      "size": 16055
+    },
+    {
+      "path": "Crates/Crates Pack/Oraxen/pack/models/default/lvl2_key.json",
+      "size": 4298
+    },
+    {
+      "path": "Crates/Crates Pack/Oraxen/pack/models/default/lvl3_crate.json",
+      "size": 18992
+    },
+    {
+      "path": "Crates/Crates Pack/Oraxen/pack/models/default/lvl3_key.json",
+      "size": 3645
+    },
+    {
+      "path": "Crates/Crates Pack/Oraxen/pack/models/default/lvl4_crate.json",
+      "size": 37668
+    },
+    {
+      "path": "Crates/Crates Pack/Oraxen/pack/models/default/lvl4_key.json",
+      "size": 2676
+    },
+    {
+      "path": "Crates/Crates Pack/Oraxen/pack/textures/default/lvl1_crate.png",
+      "size": 2143
+    },
+    {
+      "path": "Crates/Crates Pack/Oraxen/pack/textures/default/lvl1_key.png",
+      "size": 414
+    },
+    {
+      "path": "Crates/Crates Pack/Oraxen/pack/textures/default/lvl2_crate.png",
+      "size": 2982
+    },
+    {
+      "path": "Crates/Crates Pack/Oraxen/pack/textures/default/lvl2_key.png",
+      "size": 651
+    },
+    {
+      "path": "Crates/Crates Pack/Oraxen/pack/textures/default/lvl3_crate.png",
+      "size": 3603
+    },
+    {
+      "path": "Crates/Crates Pack/Oraxen/pack/textures/default/lvl3_key.png",
+      "size": 317
+    },
+    {
+      "path": "Crates/Crates Pack/Oraxen/pack/textures/default/lvl4_crate.png",
+      "size": 4278
+    },
+    {
+      "path": "Crates/Crates Pack/Oraxen/pack/textures/default/lvl4_key.png",
+      "size": 284
+    },
+    {
+      "path": "Furniture/Crucible/assets/minecraft/models/item/charcoal.json",
+      "size": 8272
+    },
+    {
+      "path": "Furniture/Crucible/assets/minecraft/models/item/leather_boots.json",
+      "size": 2516
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/arm_chair.json",
+      "size": 7820
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/bed_bunk.json",
+      "size": 17386
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/bed_double.json",
+      "size": 8655
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/bed_single.json",
+      "size": 8027
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/book_open.json",
+      "size": 3510
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/book_stack_horizontal_1.json",
+      "size": 10675
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/book_stack_horizontal_2.json",
+      "size": 19931
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/book_stack_vertical_1.json",
+      "size": 4951
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/book_stack_vertical_2.json",
+      "size": 8934
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/candle_dish.json",
+      "size": 6729
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/chair.json",
+      "size": 5861
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/chair_cushion.json",
+      "size": 6572
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/coffee_table.json",
+      "size": 5236
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/coffee_table_cloth.json",
+      "size": 7041
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/desk.json",
+      "size": 10247
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/dresser_low.json",
+      "size": 8325
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/dresser_tall.json",
+      "size": 10341
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/end_table.json",
+      "size": 3827
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/fireplace.json",
+      "size": 10374
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/lamp.json",
+      "size": 6833
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/lamp_hanging.json",
+      "size": 6398
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/lamp_tall.json",
+      "size": 6627
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/pot_1.json",
+      "size": 7108
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/pot_2.json",
+      "size": 6985
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/pot_3.json",
+      "size": 6957
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/scroll_open.json",
+      "size": 5696
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/scroll_stack.json",
+      "size": 8383
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/sofa.json",
+      "size": 7921
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/stool.json",
+      "size": 5306
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/stool_cushion.json",
+      "size": 6011
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/table_long.json",
+      "size": 5389
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/table_small.json",
+      "size": 5423
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/interior_furniture/table_small_cloth.json",
+      "size": 7227
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/bulletin_board.json",
+      "size": 9008
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/bulletin_board_small.json",
+      "size": 6389
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/bulletin_board_wall.json",
+      "size": 8093
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/canopy_flat.json",
+      "size": 8800
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/canopy_sloped.json",
+      "size": 7577
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/chalk_sign.json",
+      "size": 6938
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/chalk_sign_hanging.json",
+      "size": 3600
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/chest.json",
+      "size": 2552
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/chest_open.json",
+      "size": 10065
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/coins_1.json",
+      "size": 3242
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/coins_2.json",
+      "size": 4303
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/coins_3.json",
+      "size": 7500
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/crate_bread.json",
+      "size": 11538
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/crate_carrots.json",
+      "size": 32614
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/crate_display_bread.json",
+      "size": 13312
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/crate_display_carrots.json",
+      "size": 34842
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/crate_display_empty.json",
+      "size": 8977
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/crate_empty.json",
+      "size": 7303
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/crate_stack.json",
+      "size": 21073
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/papers_hanging_1.json",
+      "size": 5709
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/papers_hanging_2.json",
+      "size": 3221
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/papers_hanging_3.json",
+      "size": 3672
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/sack.json",
+      "size": 2554
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/shipping_crate.json",
+      "size": 4318
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/shipping_crate_triple_stack.json",
+      "size": 10949
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/shop_cart.json",
+      "size": 32541
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/streamers_hanging.json",
+      "size": 7746
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/streamer_post.json",
+      "size": 9817
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/wagon.json",
+      "size": 34013
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/market_furniture/wagon_full.json",
+      "size": 39430
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/nature_decor/brown_mushroom_patch.json",
+      "size": 5910
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/nature_decor/brown_mushroom_patch_large.json",
+      "size": 5148
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/nature_decor/cattails.json",
+      "size": 11136
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/nature_decor/clovers.json",
+      "size": 10244
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/nature_decor/clover_flowers.json",
+      "size": 13406
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/nature_decor/crystal.json",
+      "size": 14121
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/nature_decor/glow_mushroom_patch.json",
+      "size": 6909
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/nature_decor/glow_mushroom_patch_large.json",
+      "size": 9533
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/nature_decor/log_mushroom.json",
+      "size": 2299
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/nature_decor/log_mushroom_corner.json",
+      "size": 3275
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/nature_decor/log_pile_large.json",
+      "size": 6211
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/nature_decor/log_pile_large_overgrown.json",
+      "size": 13325
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/nature_decor/log_pile_small_1.json",
+      "size": 6378
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/nature_decor/log_pile_small_2.json",
+      "size": 5337
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/nature_decor/log_pile_small_3.json",
+      "size": 4823
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/nature_decor/orange_mushroom_patch.json",
+      "size": 11654
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/nature_decor/orange_mushroom_patch_large.json",
+      "size": 13529
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/nature_decor/ore.json",
+      "size": 6739
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/nature_decor/pebbles_1.json",
+      "size": 1922
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/nature_decor/pebbles_2.json",
+      "size": 2490
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/nature_decor/pebbles_3.json",
+      "size": 1566
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/nature_decor/plant.json",
+      "size": 13060
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/nature_decor/red_mushroom_patch.json",
+      "size": 5907
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/nature_decor/red_mushroom_patch_large.json",
+      "size": 5070
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/nature_decor/rock_1.json",
+      "size": 2488
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/nature_decor/rock_2.json",
+      "size": 2936
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/nature_decor/rock_3.json",
+      "size": 3125
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/models/essentials/nature_decor/rock_4.json",
+      "size": 3078
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/arm_chair.png",
+      "size": 1523
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/bed_bunk.png",
+      "size": 3460
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/bed_double.png",
+      "size": 2444
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/bed_single.png",
+      "size": 3151
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/blue_book.png",
+      "size": 523
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/book_open.png",
+      "size": 736
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/candle.png",
+      "size": 742
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/candle_flame.png",
+      "size": 204
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/candle_flame.png.mcmeta",
+      "size": 62
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/chair.png",
+      "size": 688
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/coffee_table.png",
+      "size": 871
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/coffee_table_cloth.png",
+      "size": 540
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/cushion.png",
+      "size": 311
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/desk.png",
+      "size": 1515
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/dresser_low.png",
+      "size": 1428
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/dresser_tall.png",
+      "size": 1567
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/end_table.png",
+      "size": 848
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/fireplace.png",
+      "size": 3570
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/fireplace_fire.png",
+      "size": 2006
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/fireplace_fire.png.mcmeta",
+      "size": 62
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/green_book.png",
+      "size": 509
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/lamp.png",
+      "size": 1177
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/lamp_hanging.png",
+      "size": 1200
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/lamp_tall.png",
+      "size": 1073
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/long_table.png",
+      "size": 1221
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/orange_book.png",
+      "size": 497
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/pot_1.png",
+      "size": 1103
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/pot_2.png",
+      "size": 1226
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/pot_3.png",
+      "size": 1224
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/purple_book.png",
+      "size": 516
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/scroll.png",
+      "size": 595
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/scroll_map.png",
+      "size": 842
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/small_table.png",
+      "size": 694
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/small_table_fabric.png",
+      "size": 462
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/sofa.png",
+      "size": 1701
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/interior_furniture/stool.png",
+      "size": 629
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/market_furniture/bulletin_board.png",
+      "size": 1805
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/market_furniture/bulletin_board_small.png",
+      "size": 1273
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/market_furniture/bulletin_board_wall.png",
+      "size": 1372
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/market_furniture/canopy_flat.png",
+      "size": 1102
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/market_furniture/canopy_flat_tint.png",
+      "size": 284
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/market_furniture/canopy_sloped.png",
+      "size": 1062
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/market_furniture/canopy_tint.png",
+      "size": 291
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/market_furniture/chalk_sign.png",
+      "size": 1128
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/market_furniture/chalk_sign_hanging.png",
+      "size": 1038
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/market_furniture/chest.png",
+      "size": 1013
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/market_furniture/chest_open.png",
+      "size": 1999
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/market_furniture/coins.png",
+      "size": 457
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/market_furniture/crate_bread.png",
+      "size": 1543
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/market_furniture/crate_carrots.png",
+      "size": 2195
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/market_furniture/crate_display_bread.png",
+      "size": 1819
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/market_furniture/crate_display_carrots.png",
+      "size": 2745
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/market_furniture/crate_display_empty.png",
+      "size": 937
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/market_furniture/crate_empty.png",
+      "size": 718
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/market_furniture/crate_stack.png",
+      "size": 1367
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/market_furniture/sack.png",
+      "size": 477
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/market_furniture/shipping_crate.png",
+      "size": 1268
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/market_furniture/shop_cart.png",
+      "size": 4480
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/market_furniture/shop_cart_tint.png",
+      "size": 320
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/market_furniture/streamers_hanging.png",
+      "size": 817
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/market_furniture/streamer_post.png",
+      "size": 1928
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/market_furniture/wagon.png",
+      "size": 4401
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/market_furniture/wagon_full.png",
+      "size": 6045
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/brown_mushrooms.png",
+      "size": 789
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/brown_mushrooms_large.png",
+      "size": 965
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/cattails.png",
+      "size": 1075
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/clovers.png",
+      "size": 497
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/clover_flowers.png",
+      "size": 171
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/clover_flower_base.png",
+      "size": 537
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/crystal_base.png",
+      "size": 386
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/crystal_tint.png",
+      "size": 931
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/crystal_tint_e.png",
+      "size": 931
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/glow_mushrooms.png",
+      "size": 748
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/glow_mushrooms_e.png",
+      "size": 748
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/glow_mushrooms_large.png",
+      "size": 1202
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/glow_mushrooms_large_e.png",
+      "size": 1202
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/log_mushroom.png",
+      "size": 396
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/log_mushroom_corner.png",
+      "size": 425
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/log_pile_large.png",
+      "size": 2153
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/log_pile_large_overgrown.png",
+      "size": 3357
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/log_pile_small.png",
+      "size": 1638
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/orange_mushrooms.png",
+      "size": 854
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/orange_mushrooms_small.png",
+      "size": 753
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/ore_base.png",
+      "size": 536
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/ore_tint.png",
+      "size": 708
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/ore_tint_e.png",
+      "size": 708
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/pebbles_1.png",
+      "size": 193
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/pebbles_2.png",
+      "size": 291
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/plant.png",
+      "size": 1192
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/red_mushrooms.png",
+      "size": 970
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/red_mushrooms_large.png",
+      "size": 1259
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/rock_1.png",
+      "size": 400
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/rock_2.png",
+      "size": 561
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/rock_3.png",
+      "size": 452
+    },
+    {
+      "path": "Furniture/Crucible/assets/workshop_six/textures/essentials/nature_decor/rock_4.png",
+      "size": 517
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/arm_chair.json",
+      "size": 7820
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/bed_bunk.json",
+      "size": 17386
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/bed_double.json",
+      "size": 8655
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/bed_single.json",
+      "size": 8027
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/book_open.json",
+      "size": 3510
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/book_stack_horizontal_1.json",
+      "size": 10675
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/book_stack_horizontal_2.json",
+      "size": 19931
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/book_stack_vertical_1.json",
+      "size": 4951
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/book_stack_vertical_2.json",
+      "size": 8934
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/candle_dish.json",
+      "size": 6729
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/chair.json",
+      "size": 5861
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/chair_cushion.json",
+      "size": 6572
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/coffee_table.json",
+      "size": 5236
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/coffee_table_cloth.json",
+      "size": 7041
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/desk.json",
+      "size": 10247
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/dresser_low.json",
+      "size": 8325
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/dresser_tall.json",
+      "size": 10341
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/end_table.json",
+      "size": 3827
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/fireplace.json",
+      "size": 10374
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/lamp.json",
+      "size": 6833
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/lamp_hanging.json",
+      "size": 6398
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/lamp_tall.json",
+      "size": 6627
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/pot_1.json",
+      "size": 7108
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/pot_2.json",
+      "size": 6985
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/pot_3.json",
+      "size": 6957
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/scroll_open.json",
+      "size": 5696
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/scroll_stack.json",
+      "size": 8383
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/sofa.json",
+      "size": 7921
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/stool.json",
+      "size": 5306
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/stool_cushion.json",
+      "size": 6011
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/table_long.json",
+      "size": 5389
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/table_small.json",
+      "size": 5423
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/interior_furniture/table_small_cloth.json",
+      "size": 7227
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/bulletin_board.json",
+      "size": 9008
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/bulletin_board_small.json",
+      "size": 6389
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/bulletin_board_wall.json",
+      "size": 8069
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/canopy_flat.json",
+      "size": 8772
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/canopy_sloped.json",
+      "size": 7549
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/chalk_sign.json",
+      "size": 6938
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/chalk_sign_hanging.json",
+      "size": 3576
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/chest.json",
+      "size": 2552
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/chest_open.json",
+      "size": 10065
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/coins_1.json",
+      "size": 3242
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/coins_2.json",
+      "size": 4303
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/coins_3.json",
+      "size": 7500
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/crate_bread.json",
+      "size": 11538
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/crate_carrots.json",
+      "size": 32614
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/crate_display_bread.json",
+      "size": 13312
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/crate_display_carrots.json",
+      "size": 34842
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/crate_display_empty.json",
+      "size": 8977
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/crate_empty.json",
+      "size": 7303
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/crate_stack.json",
+      "size": 21073
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/papers_hanging_1.json",
+      "size": 5682
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/papers_hanging_2.json",
+      "size": 3198
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/papers_hanging_3.json",
+      "size": 3651
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/sack.json",
+      "size": 2554
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/shipping_crate.json",
+      "size": 4318
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/shipping_crate_triple_stack.json",
+      "size": 10949
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/shop_cart.json",
+      "size": 32541
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/streamers_hanging.json",
+      "size": 7718
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/streamer_post.json",
+      "size": 9817
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/wagon.json",
+      "size": 34013
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/market_furniture/wagon_full.json",
+      "size": 39430
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/nature_decor/brown_mushroom_patch.json",
+      "size": 5910
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/nature_decor/brown_mushroom_patch_large.json",
+      "size": 5148
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/nature_decor/cattails.json",
+      "size": 11136
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/nature_decor/clovers.json",
+      "size": 10244
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/nature_decor/clover_flowers.json",
+      "size": 13406
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/nature_decor/crystal.json",
+      "size": 14121
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/nature_decor/glow_mushroom_patch.json",
+      "size": 6909
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/nature_decor/glow_mushroom_patch_large.json",
+      "size": 9533
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/nature_decor/log_mushroom.json",
+      "size": 2299
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/nature_decor/log_mushroom_corner.json",
+      "size": 3275
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/nature_decor/log_pile_large.json",
+      "size": 6211
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/nature_decor/log_pile_large_overgrown.json",
+      "size": 13325
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/nature_decor/log_pile_small_1.json",
+      "size": 6378
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/nature_decor/log_pile_small_2.json",
+      "size": 5337
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/nature_decor/log_pile_small_3.json",
+      "size": 4823
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/nature_decor/orange_mushroom_patch.json",
+      "size": 11654
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/nature_decor/orange_mushroom_patch_large.json",
+      "size": 13529
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/nature_decor/ore.json",
+      "size": 6739
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/nature_decor/pebbles_1.json",
+      "size": 1922
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/nature_decor/pebbles_2.json",
+      "size": 2490
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/nature_decor/pebbles_3.json",
+      "size": 1566
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/nature_decor/plant.json",
+      "size": 13060
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/nature_decor/red_mushroom_patch.json",
+      "size": 5907
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/nature_decor/red_mushroom_patch_large.json",
+      "size": 5070
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/nature_decor/rock_1.json",
+      "size": 2488
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/nature_decor/rock_2.json",
+      "size": 2936
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/nature_decor/rock_3.json",
+      "size": 3125
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/models/essentials/nature_decor/rock_4.json",
+      "size": 3078
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/arm_chair.png",
+      "size": 1523
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/bed_bunk.png",
+      "size": 3460
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/bed_double.png",
+      "size": 2444
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/bed_single.png",
+      "size": 3151
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/blue_book.png",
+      "size": 523
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/book_open.png",
+      "size": 736
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/candle.png",
+      "size": 742
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/candle_flame.png",
+      "size": 204
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/candle_flame.png.mcmeta",
+      "size": 62
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/chair.png",
+      "size": 688
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/coffee_table.png",
+      "size": 871
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/coffee_table_cloth.png",
+      "size": 540
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/cushion.png",
+      "size": 311
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/desk.png",
+      "size": 1515
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/dresser_low.png",
+      "size": 1428
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/dresser_tall.png",
+      "size": 1567
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/end_table.png",
+      "size": 848
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/fireplace.png",
+      "size": 3570
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/fireplace_fire.png",
+      "size": 2006
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/fireplace_fire.png.mcmeta",
+      "size": 62
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/green_book.png",
+      "size": 509
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/lamp.png",
+      "size": 1177
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/lamp_hanging.png",
+      "size": 1200
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/lamp_tall.png",
+      "size": 1073
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/long_table.png",
+      "size": 1221
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/orange_book.png",
+      "size": 497
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/pot_1.png",
+      "size": 1103
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/pot_2.png",
+      "size": 1226
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/pot_3.png",
+      "size": 1224
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/purple_book.png",
+      "size": 516
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/scroll.png",
+      "size": 595
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/scroll_map.png",
+      "size": 842
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/small_table.png",
+      "size": 694
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/small_table_fabric.png",
+      "size": 462
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/sofa.png",
+      "size": 1701
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/interior_furniture/stool.png",
+      "size": 629
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/market_furniture/bulletin_board.png",
+      "size": 1805
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/market_furniture/bulletin_board_small.png",
+      "size": 1273
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/market_furniture/bulletin_board_wall.png",
+      "size": 1372
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/market_furniture/canopy_flat.png",
+      "size": 1102
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/market_furniture/canopy_flat_tint.png",
+      "size": 284
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/market_furniture/canopy_sloped.png",
+      "size": 1062
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/market_furniture/canopy_tint.png",
+      "size": 291
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/market_furniture/chalk_sign.png",
+      "size": 1128
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/market_furniture/chalk_sign_hanging.png",
+      "size": 1038
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/market_furniture/chest.png",
+      "size": 1013
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/market_furniture/chest_open.png",
+      "size": 1999
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/market_furniture/coins.png",
+      "size": 457
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/market_furniture/crate_bread.png",
+      "size": 1543
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/market_furniture/crate_carrots.png",
+      "size": 2195
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/market_furniture/crate_display_bread.png",
+      "size": 1819
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/market_furniture/crate_display_carrots.png",
+      "size": 2745
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/market_furniture/crate_display_empty.png",
+      "size": 937
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/market_furniture/crate_empty.png",
+      "size": 718
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/market_furniture/crate_stack.png",
+      "size": 1367
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/market_furniture/sack.png",
+      "size": 477
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/market_furniture/shipping_crate.png",
+      "size": 1268
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/market_furniture/shop_cart.png",
+      "size": 4480
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/market_furniture/shop_cart_tint.png",
+      "size": 320
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/market_furniture/streamers_hanging.png",
+      "size": 817
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/market_furniture/streamer_post.png",
+      "size": 1928
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/market_furniture/wagon.png",
+      "size": 4401
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/market_furniture/wagon_full.png",
+      "size": 6045
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/brown_mushrooms.png",
+      "size": 789
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/brown_mushrooms_large.png",
+      "size": 965
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/cattails.png",
+      "size": 1075
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/clovers.png",
+      "size": 497
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/clover_flowers.png",
+      "size": 171
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/clover_flower_base.png",
+      "size": 537
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/crystal_base.png",
+      "size": 386
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/crystal_tint.png",
+      "size": 931
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/crystal_tint_e.png",
+      "size": 931
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/glow_mushrooms.png",
+      "size": 748
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/glow_mushrooms_e.png",
+      "size": 748
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/glow_mushrooms_large.png",
+      "size": 1202
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/glow_mushrooms_large_e.png",
+      "size": 1202
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/log_mushroom.png",
+      "size": 396
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/log_mushroom_corner.png",
+      "size": 425
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/log_pile_large.png",
+      "size": 2153
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/log_pile_large_overgrown.png",
+      "size": 3357
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/log_pile_small.png",
+      "size": 1638
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/orange_mushrooms.png",
+      "size": 854
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/orange_mushrooms_small.png",
+      "size": 753
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/ore_base.png",
+      "size": 536
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/ore_tint.png",
+      "size": 708
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/ore_tint_e.png",
+      "size": 708
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/pebbles_1.png",
+      "size": 193
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/pebbles_2.png",
+      "size": 291
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/plant.png",
+      "size": 1192
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/red_mushrooms.png",
+      "size": 970
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/red_mushrooms_large.png",
+      "size": 1259
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/rock_1.png",
+      "size": 400
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/rock_2.png",
+      "size": 561
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/rock_3.png",
+      "size": 452
+    },
+    {
+      "path": "Furniture/ItemsAdder/contents/workshop_six/resourcepack/assets/workshop_six/textures/essentials/nature_decor/rock_4.png",
+      "size": 517
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/arm_chair.json",
+      "size": 7820
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/bed_bunk.json",
+      "size": 17386
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/bed_double.json",
+      "size": 8655
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/bed_single.json",
+      "size": 8027
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/book_open.json",
+      "size": 3510
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/book_stack_horizontal_1.json",
+      "size": 10675
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/book_stack_horizontal_2.json",
+      "size": 19931
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/book_stack_vertical_1.json",
+      "size": 4951
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/book_stack_vertical_2.json",
+      "size": 8934
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/candle_dish.json",
+      "size": 6729
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/chair.json",
+      "size": 5861
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/chair_cushion.json",
+      "size": 6572
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/coffee_table.json",
+      "size": 5236
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/coffee_table_cloth.json",
+      "size": 7041
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/desk.json",
+      "size": 10247
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/dresser_low.json",
+      "size": 8325
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/dresser_tall.json",
+      "size": 10341
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/end_table.json",
+      "size": 3827
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/fireplace.json",
+      "size": 10374
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/lamp.json",
+      "size": 6833
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/lamp_hanging.json",
+      "size": 6398
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/lamp_tall.json",
+      "size": 6627
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/pot_1.json",
+      "size": 7108
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/pot_2.json",
+      "size": 6985
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/pot_3.json",
+      "size": 6957
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/scroll_open.json",
+      "size": 5696
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/scroll_stack.json",
+      "size": 8383
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/sofa.json",
+      "size": 7921
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/stool.json",
+      "size": 5306
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/stool_cushion.json",
+      "size": 6011
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/table_long.json",
+      "size": 5389
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/table_small.json",
+      "size": 5423
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/interior_furniture/table_small_cloth.json",
+      "size": 7227
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/bulletin_board.json",
+      "size": 9008
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/bulletin_board_small.json",
+      "size": 6389
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/bulletin_board_wall.json",
+      "size": 8093
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/canopy_flat.json",
+      "size": 8799
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/canopy_sloped.json",
+      "size": 7577
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/chalk_sign.json",
+      "size": 6938
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/chalk_sign_hanging.json",
+      "size": 3600
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/chest.json",
+      "size": 2552
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/chest_open.json",
+      "size": 10065
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/coins_1.json",
+      "size": 3242
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/coins_2.json",
+      "size": 4303
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/coins_3.json",
+      "size": 7500
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/crate_bread.json",
+      "size": 11538
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/crate_carrots.json",
+      "size": 32614
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/crate_display_bread.json",
+      "size": 13312
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/crate_display_carrots.json",
+      "size": 34842
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/crate_display_empty.json",
+      "size": 8977
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/crate_empty.json",
+      "size": 7303
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/crate_stack.json",
+      "size": 21073
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/papers_hanging_1.json",
+      "size": 5709
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/papers_hanging_2.json",
+      "size": 3221
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/papers_hanging_3.json",
+      "size": 3672
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/sack.json",
+      "size": 2554
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/shipping_crate.json",
+      "size": 4318
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/shipping_crate_triple_stack.json",
+      "size": 10949
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/shop_cart.json",
+      "size": 32541
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/streamers_hanging.json",
+      "size": 7746
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/streamer_post.json",
+      "size": 9817
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/wagon.json",
+      "size": 34013
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/market_furniture/wagon_full.json",
+      "size": 39430
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/nature_decor/brown_mushroom_patch.json",
+      "size": 5910
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/nature_decor/brown_mushroom_patch_large.json",
+      "size": 5148
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/nature_decor/cattails.json",
+      "size": 11136
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/nature_decor/clovers.json",
+      "size": 10244
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/nature_decor/clover_flowers.json",
+      "size": 13406
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/nature_decor/crystal.json",
+      "size": 14121
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/nature_decor/glow_mushroom_patch.json",
+      "size": 6909
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/nature_decor/glow_mushroom_patch_large.json",
+      "size": 9533
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/nature_decor/log_mushroom.json",
+      "size": 2299
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/nature_decor/log_mushroom_corner.json",
+      "size": 3275
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/nature_decor/log_pile_large.json",
+      "size": 6211
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/nature_decor/log_pile_large_overgrown.json",
+      "size": 13325
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/nature_decor/log_pile_small_1.json",
+      "size": 6378
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/nature_decor/log_pile_small_2.json",
+      "size": 5337
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/nature_decor/log_pile_small_3.json",
+      "size": 4823
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/nature_decor/orange_mushroom_patch.json",
+      "size": 11654
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/nature_decor/orange_mushroom_patch_large.json",
+      "size": 13529
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/nature_decor/ore.json",
+      "size": 6739
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/nature_decor/pebbles_1.json",
+      "size": 1922
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/nature_decor/pebbles_2.json",
+      "size": 2490
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/nature_decor/pebbles_3.json",
+      "size": 1566
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/nature_decor/plant.json",
+      "size": 13060
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/nature_decor/red_mushroom_patch.json",
+      "size": 5907
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/nature_decor/red_mushroom_patch_large.json",
+      "size": 5070
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/nature_decor/rock_1.json",
+      "size": 2488
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/nature_decor/rock_2.json",
+      "size": 2936
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/nature_decor/rock_3.json",
+      "size": 3125
+    },
+    {
+      "path": "Furniture/Oraxen/pack/models/workshop_six/essentials/nature_decor/rock_4.json",
+      "size": 3078
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/arm_chair.png",
+      "size": 1523
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/bed_bunk.png",
+      "size": 3460
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/bed_double.png",
+      "size": 2444
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/bed_single.png",
+      "size": 3151
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/blue_book.png",
+      "size": 523
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/book_open.png",
+      "size": 736
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/candle.png",
+      "size": 742
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/candle_flame.png",
+      "size": 204
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/candle_flame.png.mcmeta",
+      "size": 62
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/chair.png",
+      "size": 688
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/coffee_table.png",
+      "size": 871
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/coffee_table_cloth.png",
+      "size": 540
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/cushion.png",
+      "size": 311
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/desk.png",
+      "size": 1515
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/dresser_low.png",
+      "size": 1428
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/dresser_tall.png",
+      "size": 1567
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/end_table.png",
+      "size": 848
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/fireplace.png",
+      "size": 3570
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/fireplace_fire.png",
+      "size": 2006
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/fireplace_fire.png.mcmeta",
+      "size": 62
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/green_book.png",
+      "size": 509
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/lamp.png",
+      "size": 1177
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/lamp_hanging.png",
+      "size": 1200
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/lamp_tall.png",
+      "size": 1073
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/long_table.png",
+      "size": 1221
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/orange_book.png",
+      "size": 497
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/pot_1.png",
+      "size": 1103
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/pot_2.png",
+      "size": 1226
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/pot_3.png",
+      "size": 1224
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/purple_book.png",
+      "size": 516
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/scroll.png",
+      "size": 595
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/scroll_map.png",
+      "size": 842
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/small_table.png",
+      "size": 694
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/small_table_fabric.png",
+      "size": 462
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/sofa.png",
+      "size": 1701
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/interior_furniture/stool.png",
+      "size": 629
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/market_furniture/bulletin_board.png",
+      "size": 1805
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/market_furniture/bulletin_board_small.png",
+      "size": 1273
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/market_furniture/bulletin_board_wall.png",
+      "size": 1372
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/market_furniture/canopy_flat.png",
+      "size": 1102
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/market_furniture/canopy_flat_tint.png",
+      "size": 284
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/market_furniture/canopy_sloped.png",
+      "size": 1062
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/market_furniture/canopy_tint.png",
+      "size": 291
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/market_furniture/chalk_sign.png",
+      "size": 1128
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/market_furniture/chalk_sign_hanging.png",
+      "size": 1038
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/market_furniture/chest.png",
+      "size": 1013
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/market_furniture/chest_open.png",
+      "size": 1999
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/market_furniture/coins.png",
+      "size": 457
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/market_furniture/crate_bread.png",
+      "size": 1543
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/market_furniture/crate_carrots.png",
+      "size": 2195
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/market_furniture/crate_display_bread.png",
+      "size": 1819
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/market_furniture/crate_display_carrots.png",
+      "size": 2745
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/market_furniture/crate_display_empty.png",
+      "size": 937
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/market_furniture/crate_empty.png",
+      "size": 718
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/market_furniture/crate_stack.png",
+      "size": 1367
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/market_furniture/sack.png",
+      "size": 477
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/market_furniture/shipping_crate.png",
+      "size": 1268
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/market_furniture/shop_cart.png",
+      "size": 4480
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/market_furniture/shop_cart_tint.png",
+      "size": 320
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/market_furniture/streamers_hanging.png",
+      "size": 817
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/market_furniture/streamer_post.png",
+      "size": 1928
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/market_furniture/wagon.png",
+      "size": 4401
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/market_furniture/wagon_full.png",
+      "size": 6045
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/brown_mushrooms.png",
+      "size": 789
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/brown_mushrooms_large.png",
+      "size": 965
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/cattails.png",
+      "size": 1075
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/clovers.png",
+      "size": 497
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/clover_flowers.png",
+      "size": 171
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/clover_flower_base.png",
+      "size": 537
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/crystal_base.png",
+      "size": 386
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/crystal_tint.png",
+      "size": 931
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/crystal_tint_e.png",
+      "size": 931
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/glow_mushrooms.png",
+      "size": 748
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/glow_mushrooms_e.png",
+      "size": 748
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/glow_mushrooms_large.png",
+      "size": 1202
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/glow_mushrooms_large_e.png",
+      "size": 1202
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/log_mushroom.png",
+      "size": 396
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/log_mushroom_corner.png",
+      "size": 425
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/log_pile_large.png",
+      "size": 2153
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/log_pile_large_overgrown.png",
+      "size": 3357
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/log_pile_small.png",
+      "size": 1638
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/orange_mushrooms.png",
+      "size": 854
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/orange_mushrooms_small.png",
+      "size": 753
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/ore_base.png",
+      "size": 536
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/ore_tint.png",
+      "size": 708
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/ore_tint_e.png",
+      "size": 708
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/pebbles_1.png",
+      "size": 193
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/pebbles_2.png",
+      "size": 291
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/plant.png",
+      "size": 1192
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/red_mushrooms.png",
+      "size": 970
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/red_mushrooms_large.png",
+      "size": 1259
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/rock_1.png",
+      "size": 400
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/rock_2.png",
+      "size": 561
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/rock_3.png",
+      "size": 452
+    },
+    {
+      "path": "Furniture/Oraxen/pack/textures/workshop_six/essentials/nature_decor/rock_4.png",
+      "size": 517
+    },
+    {
+      "path": "TrainingDummy/ModelEngine/blueprints/dummy.bbmodel",
+      "size": 14453
+    }
+  ]
+}

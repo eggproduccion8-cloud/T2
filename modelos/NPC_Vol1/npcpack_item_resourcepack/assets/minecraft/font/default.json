@@ -1,0 +1,121 @@
+{
+	"providers": [
+		{
+			"type": "bitmap",
+			"file": "littleroom_npcpack2:kinghead.png",
+			"height": 48,
+			"ascent": 24,
+			"chars": [
+				"🀄"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "littleroom_npcpack2:adventurerhead.png",
+			"height": 48,
+			"ascent": 24,
+			"chars": [
+				"🃏"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "littleroom_npcpack2:tavernhead.png",
+			"height": 48,
+			"ascent": 24,
+			"chars": [
+				"🅰"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "littleroom_npcpack2:piratehead.png",
+			"height": 48,
+			"ascent": 24,
+			"chars": [
+				"🅱"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "littleroom_npcpack2:minerhead.png",
+			"height": 48,
+			"ascent": 24,
+			"chars": [
+				"🅾"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "littleroom_npc:speech1.png",
+			"height": 180,
+			"ascent": 118,
+			"chars": [
+				"🅿"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "littleroom_npc:blacksmithhead.png",
+			"height": 48,
+			"ascent": 24,
+			"chars": [
+				"⏳"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "littleroom_npc:farmerhead.png",
+			"height": 48,
+			"ascent": 24,
+			"chars": [
+				"⏩"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "littleroom_npc:archerhead.png",
+			"height": 48,
+			"ascent": 24,
+			"chars": [
+				"⏪"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "littleroom_npc:butcherhead.png",
+			"height": 48,
+			"ascent": 24,
+			"chars": [
+				"⏫"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "littleroom_npc:wizardhead.png",
+			"height": 48,
+			"ascent": 24,
+			"chars": [
+				"⏏"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "littleroom_npc:guardhead.png",
+			"height": 48,
+			"ascent": 24,
+			"chars": [
+				"⏬"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "littleroom_npc:speech1.png",
+			"height": 180,
+			"ascent": 118,
+			"chars": [
+				"⏰"
+			]
+		}
+	]
+}

@@ -1,0 +1,128 @@
+lemon_class_selection_close:
+  NumberOfRows: 3
+  ContainerType: STATION
+  DisplayTitle: <shift:-64> <glyph:class_selection_gui_close>
+  Contents:
+  # KEY
+  - KEY_1 1||DISPLAY||v YELLOW_DYE 0||1||CMD88||HFGHIDE_ATTRIBUTES||
+  - KEY_2 2||DISPLAY||v YELLOW_DYE 0||1||CMD2||HFGHIDE_ATTRIBUTES||
+  - KEY_3 3||DISPLAY||v YELLOW_DYE 0||1||CMD2||HFGHIDE_ATTRIBUTES||
+  - KEY_4 4||DISPLAY||v YELLOW_DYE 0||1||CMD2||HFGHIDE_ATTRIBUTES||
+  - PREVIOUS 9||DISPLAY||v YELLOW_DYE 0||1||COCgoop mythicmobs runSkillAs lemon_class_selection_key_previous
+    %player%||NME§x§F§F§C§C§0§0Previous||CMD2||HFGHIDE_ATTRIBUTES||
+  - KEY 10||DISPLAY||v YELLOW_DYE 0||1||NME<#ffcc00>CARILLON KEY||CMD2||HFGHIDE_ATTRIBUTES||LRE000<#ccccff>------------------||LRE001<#d6f5f5>What a strange||LRE002<#d6f5f5>shape! who know||LRE003<#d6f5f5>what it open!?||COCgoop mythicmobs runSkillAs lemon_class_selection_key_1 %player%||
+  - KEY 11||DISPLAY||v YELLOW_DYE 0||1||NME<#ffcc00>INFERNAL DOOR KEY||CMD2||HFGHIDE_ATTRIBUTES||LRE000<#ccccff>------------------||LRE001<#d6f5f5>This key open the||LRE002<#d6f5f5>gate to hell. Mh...||LRE003<#d6f5f5>better not use it!||COCgoop mythicmobs runSkillAs lemon_class_selection_key_2 %player%||
+  - KEY 12||DISPLAY||v YELLOW_DYE 0||1||NME<#c68c53>WOODEN TWIG||CMD2||HFGHIDE_ATTRIBUTES||LRE000<#ccccff>------------------||LRE001<#d6f5f5>Great for poking||LRE002<#d6f5f5>an eye in total||LRE003<#d6f5f5>safety. Must try!||COCgoop mythicmobs runSkillAs lemon_class_selection_key_3 %player%||
+  - KEY 13||DISPLAY||v YELLOW_DYE 0||1||NME<#ffcc00>GLOBAL KEY||CMD2||HFGHIDE_ATTRIBUTES||LRE000<#ccccff>------------------||LRE001<#d6f5f5>Perfect! but for||LRE002<#d6f5f5>what? this book||LRE003<#d6f5f5>has no locks...||COCgoop mythicmobs runSkillAs lemon_class_selection_key_4 %player%||
+  #  BUTTOMS
+  - NEXT 14||DISPLAY||v YELLOW_DYE 0||1||COCgoop mythicmobs runSkillAs lemon_class_selection_key_next
+    %player%||NME§x§F§F§C§C§0§0Next||CMD2||HFGHIDE_ATTRIBUTES||
+  - EYE 16||DISPLAY||v YELLOW_DYE 0||1||CMD87||HFGHIDE_ATTRIBUTES||NME<#00cc99>MAGIC EYE SEAL||LRE000<#ccccff>------------------||LRE001<#d6f5f5>This eye is afraid||LRE002<#d6f5f5>of the sticks!||COCgoop mythicmobs runSkillAs lemon_class_selection_sound_eye %player%
+  - CONFIRM 23||DISPLAY||v YELLOW_DYE 0||1||COCgoop mythicmobs runSkillAs lemon_class_selection_open
+    %player%||NME§x§9§9§C§C§0§0Confirm||CMD2||HFGHIDE_ATTRIBUTES||
+  CommandOnOpen:
+  - goop mythicmobs RunSkillAs lemon_class_selection_key_var_start %player%
+  AllowInventoryDrag: true
+  ProvidedDragToInventory: true
+
+lemon_class_selection_character_1:
+  NumberOfRows: 3
+  ContainerType: STATION
+  DisplayTitle: <shift:-64> <glyph:class_selection_gui>
+  Contents:
+  # NEXT/PREVIOUS/CONFIRM BUTTOM
+  - SKILLS 0||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD2||NME<#66ccff>Skills preview||COCgoop
+    mythicmobs runSkillAs lemon_class_selection_page_1_skill %player%||
+  - PREVIOUS 13||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD68||NME<#ffcc00>Previous||COCgoop
+    mythicmobs runSkillAs lemon_class_selection_close %player%||
+  - NEXT 17||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD69||NME<#ffcc00>Next||COCgoop
+    mythicmobs runSkillAs lemon_class_selection_next_page_goto2 %player%||
+  - CONFIRM 25||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD70||NME<#99cc00>Confirm||COCgoop mythicmobs runSkillAs lemon_class_selection_confirm1 %player%||
+  # HEAD MODEL
+  - HEAD 11||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD2||
+  # INFO/LORE CLASS
+  - BOOK 15||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD2||||NME<#d6f5f5>Class
+    name||LRE000&f||LRE001&7Class lore Class lore||LRE002&7Class lore Class lore||LRE003§3&7Class
+    lore Class lore||LRE004&7Class lore Class lore||LRE005<#ccccff>------------------||LRE006<#d6f5f5>
+    Health:<#d6f5f5>          Defence:||LRE007<#cc3300>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%
+    <#999966>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%||LRE008<#d6f5f5>
+    Mana:<#d6f5f5>             Damage:||LRE009<#33cccc>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%
+    <#ff9900>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%||
+  - LORE 4||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD2||NME<#d6f5f5>Class
+    name||LRE000&f||LRE001&7Class lore Class lore||LRE002&7Class lore Class lore||LRE003§3&7Class
+    lore Class lore||LRE004&7Class lore Class lore||LRE005<#ccccff>------------------||LRE006<#d6f5f5>
+    Health:<#d6f5f5>          Defence:||LRE007<#cc3300>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%
+    <#999966>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%||LRE008<#d6f5f5>
+    Mana:<#d6f5f5>             Damage:||LRE009<#33cccc>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%
+    <#ff9900>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%||
+  - LORE 5||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD2||NME<#d6f5f5>Class
+    name||LRE000&f||LRE001&7Class lore Class lore||LRE002&7Class lore Class lore||LRE003§3&7Class
+    lore Class lore||LRE004&7Class lore Class lore||LRE005<#ccccff>------------------||LRE006<#d6f5f5>
+    Health:<#d6f5f5>          Defence:||LRE007<#cc3300>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%
+    <#999966>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%||LRE008<#d6f5f5>
+    Mana:<#d6f5f5>             Damage:||LRE009<#33cccc>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%
+    <#ff9900>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%||
+  - LORE 6||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD2||NME<#d6f5f5>Class
+    name||LRE000&f||LRE001&7Class lore Class lore||LRE002&7Class lore Class lore||LRE003§3&7Class
+    lore Class lore||LRE004&7Class lore Class lore||LRE005<#ccccff>------------------||LRE006<#d6f5f5>
+    Health:<#d6f5f5>          Defence:||LRE007<#cc3300>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%
+    <#999966>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%||LRE008<#d6f5f5>
+    Mana:<#d6f5f5>             Damage:||LRE009<#33cccc>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%
+    <#ff9900>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%||
+  - LORE 7||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD2||NME<#d6f5f5>Class
+    name||LRE000&f||LRE001&7Class lore Class lore||LRE002&7Class lore Class lore||LRE003§3&7Class
+    lore Class lore||LRE004&7Class lore Class lore||LRE005<#ccccff>------------------||LRE006<#d6f5f5>
+    Health:<#d6f5f5>          Defence:||LRE007<#cc3300>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%
+    <#999966>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%||LRE008<#d6f5f5>
+    Mana:<#d6f5f5>             Damage:||LRE009<#33cccc>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%
+    <#ff9900>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%||
+  - LORE 8||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD2||NME<#d6f5f5>Class
+    name||LRE000&f||LRE001&7Class lore Class lore||LRE002&7Class lore Class lore||LRE003§3&7Class
+    lore Class lore||LRE004&7Class lore Class lore||LRE005<#ccccff>------------------||LRE006<#d6f5f5>
+    Health:<#d6f5f5>          Defence:||LRE007<#cc3300>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%
+    <#999966>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%||LRE008<#d6f5f5>
+    Mana:<#d6f5f5>             Damage:||LRE009<#33cccc>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%
+    <#ff9900>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%||
+  - LORE 14||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD2||NME<#d6f5f5>Class
+    name||LRE000&f||LRE001&7Class lore Class lore||LRE002&7Class lore Class lore||LRE003§3&7Class
+    lore Class lore||LRE004&7Class lore Class lore||LRE005<#ccccff>------------------||LRE006<#d6f5f5>
+    Health:<#d6f5f5>          Defence:||LRE007<#cc3300>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%
+    <#999966>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%||LRE008<#d6f5f5>
+    Mana:<#d6f5f5>             Damage:||LRE009<#33cccc>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%
+    <#ff9900>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%||
+  - LORE 16||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD2||NME<#d6f5f5>Class
+    name||LRE000&f||LRE001&7Class lore Class lore||LRE002&7Class lore Class lore||LRE003§3&7Class
+    lore Class lore||LRE004&7Class lore Class lore||LRE005<#ccccff>------------------||LRE006<#d6f5f5>
+    Health:<#d6f5f5>          Defence:||LRE007<#cc3300>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%
+    <#999966>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%||LRE008<#d6f5f5>
+    Mana:<#d6f5f5>             Damage:||LRE009<#33cccc>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%
+    <#ff9900>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%||
+  - LORE 22||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD2||NME<#d6f5f5>Class
+    name||LRE000&f||LRE001&7Class lore Class lore||LRE002&7Class lore Class lore||LRE003§3&7Class
+    lore Class lore||LRE004&7Class lore Class lore||LRE005<#ccccff>------------------||LRE006<#d6f5f5>
+    Health:<#d6f5f5>          Defence:||LRE007<#cc3300>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%
+    <#999966>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%||LRE008<#d6f5f5>
+    Mana:<#d6f5f5>             Damage:||LRE009<#33cccc>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%
+    <#ff9900>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%||
+  - LORE 23||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD2||NME<#d6f5f5>Class
+    name||LRE000&f||LRE001&7Class lore Class lore||LRE002&7Class lore Class lore||LRE003§3&7Class
+    lore Class lore||LRE004&7Class lore Class lore||LRE005<#ccccff>------------------||LRE006<#d6f5f5>
+    Health:<#d6f5f5>          Defence:||LRE007<#cc3300>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%
+    <#999966>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%||LRE008<#d6f5f5>
+    Mana:<#d6f5f5>             Damage:||LRE009<#33cccc>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%
+    <#ff9900>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%||
+  - LORE 24||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD2||NME<#d6f5f5>Class
+    name||LRE000&f||LRE001&7Class lore Class lore||LRE002&7Class lore Class lore||LRE003§3&7Class
+    lore Class lore||LRE004&7Class lore Class lore||LRE005<#ccccff>------------------||LRE006<#d6f5f5>
+    Health:<#d6f5f5>          Defence:||LRE007<#cc3300>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%
+    <#999966>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%||LRE008<#d6f5f5>
+    Mana:<#d6f5f5>             Damage:||LRE009<#33cccc>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%
+    <#ff9900>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%||
+  - LORE 26||DISPLAY||v YELLOW_DYE 1||1||HFGHIDE_ATTRIBUTES||CMD2||NME<#d6f5f5>Class
+    name||LRE000&f||LRE001&7Class lore Class lore||LRE002&7Class lore Class lore||LRE003§3&7Class
+    lore Class lore||LRE004&7Class lore Class lore||LRE005<#ccccff>------------------||LRE006<#d6f5f5>
+    Health:<#d6f5f5>          Defence:||LRE007<#cc3300>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%
+    <#999966>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%||LRE008<#d6f5f5>
+    Mana:<#d6f5f5>             Damage:||LRE009<#33cccc>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%
+    <#ff9900>%oraxen_lemon_stat_lore_start%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_mid%&f%oraxen_lemon_stat_lore_mid%%oraxen_lemon_stat_lore_end%||
+

@@ -1,0 +1,141 @@
+ancient_altar-init:
+  Skills:
+# Set Ancient Lever Variables
+  - setvar{var=caster.debug;value=<caster.var.debug|false>;t=STRING;save=true} 
+  - setvar{var=caster.varient;value=<caster.var.varient|stone>;t=STRING;save=true}
+  - setvar{var=caster.color;val=<caster.var.color|#ffffff>;type=STRING;save=true}
+  
+  - skill{s=ancient_altar-updatemodels}
+  
+ancient_altar-updatemodels:
+  Skills:
+  - model{m=ancient_altar_stone;r=true}
+  - model{m=ancient_altar_mossy;r=true}
+  - model{m=ancient_altar_desert;r=true}
+  - model{m=ancient_altar_terracotta;r=true}
+  - model{m=ancient_altar_magma;r=true}  
+  - model{m=ancient_altar_void;r=true}  
+  
+  - model{mid=ancient_altar_<caster.var.varient>;partid=bone;scale=1;usm=true}
+  - cullconfig{vc=false;bkc=false;blc=false}
+  - brightness{mid=ancient_altar_<caster.var.varient>;pid=vfx;em=false;b=15;s=15}
+  - brightness{mid=ancient_altar_<caster.var.varient>;pid=piece;em=false;b=15;s=15}
+
+  - setstance{s=deactivated} ?stance{s=default}
+  - switch{condition=stance{s=<case>;str=true};
+    cases=
+       case activated=[ - state{mid=ancient_altar_<caster.var.varient>;s=activated_idle;priority=1} ]
+       case deactivated=[ - state{mid=ancient_altar_<caster.var.varient>;s=non_activated_idle;priority=1} ]
+    } @self
+
+# In-Game Configuration  
+ancient_altar-configure:
+  TriggerConditions:
+  - haspermission{p=mythic} true
+  Skills:
+  - look{force=true;immediately=true} ?~crouching
+  - onChat{auraname=editconfig;d="20*10";ma=true;bartimer=true;
+    bartimertext="Say Option to Configure in Chat";
+    onChat=[
+    - message{m="Editing Setting <skill.var.input>"}
+    - skill{s=ancient_altar-setsetting;setting=<skill.var.input>;duration=20} @trigger
+    - removeaura{aura=editconfig}
+    ]} @trigger
+
+ancient_altar-setsetting:
+  TriggerConditions:
+  - haspermission{p=mythic} true
+  Skills:
+  - onChat{auraname=setsetting;d="<skill.duration|5>*20";ma=true;bartimer=true;
+    bartimertext="Configuring Setting <skill.setting>";
+    onChat=[
+    - setvar{var=caster.<skill.setting>;val="<skill.var.input>";type=STRING;save=true} @self
+    - message{m="Setting Config Option <skill.setting> to <caster.var.<skill.setting>>"}
+    - skill{s=ancient_altar-updatemodels} @self
+    - removeaura{aura=setsetting}
+    ]} @trigger
+
+ancient_altar-pairing:
+  Conditions:
+  - ( varisset{var=caster.paireduuid} && stance{s=deactivated} ) castinstead ancient_altar-checkkey
+  - ( varisset{var=caster.paireduuid} && stance{s=activated} ) castinstead ancient_altar-switch
+  Skills:
+  - skill{s=ancient_altar-pair;repeat=3;repeatinterval=1} @ENO{r=256;targetarmorstands=true}
+  - message{m="Attempting Pairing <caster.stance> <caster.var.paireduuid>"} @server ?varequals{var=caster.debug;val=true}
+
+ancient_altar-pair:
+  Conditions:
+  - varisset{var=caster.paireduuid} false
+  TargetConditions:
+  - faction{f=Portals} true
+  - varisset{var=target.paireduuid} false
+  Skills:
+  - effect:particleline{p=reddust;a=3;hs=0.1;vs=0.1} @targeted
+  - setvar{var=caster.paireduuid;val="<target.uuid>";type=STRING;save=true} ?!varisset{var=caster.paireduuid}
+  - sudoskill{cat=true;s=[ 
+    - setvar{var=caster.paireduuid;val=<trigger.uuid>;type=STRING;save=true} ?!varisset{var=caster.paireduuid}
+    - message{m="<trigger.name> (<caster.uuid>) paired with <caster.name> (<trigger.uuid>)"} @PIR{r=100}
+    ]} @targeted    
+
+
+ancient_altar-checkkey:
+  Skills:
+  - switch{condition=varequals{var=caster.varient;value="<case>"};cases=
+        case desert=[ - skill{s=ancient_altar-consumekey} ?~holding{m=ancient-key-desert} ]
+        case magma=[ - skill{s=ancient_altar-consumekey} ?~holding{m=ancient-key-magma} ]
+        case mossy=[ - skill{s=ancient_altar-consumekey} ?~holding{m=ancient-key-mossy} ]
+        case stone=[ - skill{s=ancient_altar-consumekey} ?~holding{m=ancient-key-stone} ]
+        case terracotta=[ - skill{s=ancient_altar-consumekey} ?~holding{m=ancient-key-terracotta} ]
+        case void=[ - skill{s=ancient_altar-consumekey} ?~holding{m=ancient-key-void} ]
+        case DEFAULT=[ - skill{s=ancient_altar-consumekey} ]
+      } @self
+
+ancient_altar-consumekey:
+  TriggerConditions:
+  - holding{m=ancient-key-*} orelsecast ancient_altar-fail
+  Skills:
+  - consumeslot{slot=HAND;amount=1} @trigger
+  - sudoskill{s=[ 
+    - setvar{var=caster.lastopener;val=<trigger.uuid>;type=STRING;save=true} @self 
+    - message{m="opener is <trigger.name> <caster.var.lastopener>"} @trigger ?varequals{var=caster.debug;value="true"}
+    ]} @uuid{u=<caster.var.paireduuid>}
+    
+  - skill{s=ancient_altar-switch} @self
+  
+ancient_altar-fail:
+  Skills:
+  - message{m="<dark_gray>[<red>!<dark_gray>] <gray>You do not have a <white>Ancient Key!"} @trigger
+
+ancient_altar-switch:
+  Cooldown: 1
+  Skills:
+  - switch{condition=stance{s=<case>;str=true};
+    cases=
+       case activated=[ 
+       - skill{s=ancient_altar-deactivate} 
+       - signal{s=deactivate} @uuid{u=<caster.var.paireduuid>} 
+       ]
+       case deactivated=[ 
+       - skill{s=ancient_altar-activate} 
+       - signal{s=activate} @uuid{u=<caster.var.paireduuid>}
+       ]
+    } @self
+  - message{m="<caster.name> <caster.stance> signalling <caster.var.paireduuid>"} @Server ?varequals{var=caster.debug;value="true"}
+
+ancient_altar-activate:
+  Skills:
+  - setstance{s=transition} 
+  - message{m=active} @server ?varequals{var=caster.debug;val=true}
+  - state{mid=ancient_altar_<caster.var.varient>;state=activate_animation;priority=1}
+  - delay 80
+  - state{mid=ancient_altar_<caster.var.varient>;state=activated_idle;priority=1}
+  - setstance{s=activated}
+
+ancient_altar-deactivate:
+  Skills:
+  - setstance{s=transition}
+  - message{m=inactive} @server ?varequals{var=caster.debug;val=true}
+  - state{mid=ancient_altar_<caster.var.varient>;state=close_animation;priority=1}
+  - delay 64
+  - state{mid=ancient_altar_<caster.var.varient>;state=non_activated_idle;priority=1}
+  - setstance{s=deactivated}

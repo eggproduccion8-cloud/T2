@@ -1,0 +1,273 @@
+lemon_mythicrpg_button1:
+  Pack:
+    custom_model_data: 68
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+    - lemon_mythicrpg/lemon_button1
+  displayname: lemon_button1
+  material: YELLOW_DYE
+lemon_mythicrpg_button2:
+  Pack:
+    custom_model_data: 69
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+    - lemon_mythicrpg/lemon_button2
+  displayname: lemon_button1
+  material: YELLOW_DYE
+lemon_mythicrpg_button3:
+  Pack:
+    custom_model_data: 70
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+    - lemon_mythicrpg/lemon_button3
+  displayname: lemon_button1
+  material: YELLOW_DYE
+lemon_mythicrpg_book:
+  Pack:
+    custom_model_data: 71
+    generate_model: false
+    model: lemon_mythicrpg/lemon_mythicrpg_book
+  displayname: lemon_mythicrpg_book
+  material: YELLOW_DYE
+lemon_mythicrpg_book1:
+  Pack:
+    custom_model_data: 72
+    generate_model: false
+    model: lemon_mythicrpg/lemon_mythicrpg_book1
+  displayname: lemon_mythicrpg_book
+  material: YELLOW_DYE
+lemon_mythicrpg_book2:
+  Pack:
+    custom_model_data: 73
+    generate_model: false
+    model: lemon_mythicrpg/lemon_mythicrpg_book2
+  displayname: lemon_mythicrpg_book
+  material: YELLOW_DYE
+lemon_mythicrpg_book3:
+  Pack:
+    custom_model_data: 74
+    generate_model: false
+    model: lemon_mythicrpg/lemon_mythicrpg_book3
+  displayname: lemon_mythicrpg_book
+  material: YELLOW_DYE
+lemon_mythicrpg_book4:
+  Pack:
+    custom_model_data: 75
+    generate_model: false
+    model: lemon_mythicrpg/lemon_mythicrpg_book4
+  displayname: lemon_mythicrpg_book
+  material: YELLOW_DYE
+lemon_mythicrpg_book5:
+  Pack:
+    custom_model_data: 76
+    generate_model: false
+    model: lemon_mythicrpg/lemon_mythicrpg_book5
+  displayname: lemon_mythicrpg_book
+  material: YELLOW_DYE
+lemon_mythicrpg_book6:
+  Pack:
+    custom_model_data: 77
+    generate_model: false
+    model: lemon_mythicrpg/lemon_mythicrpg_book6
+  displayname: lemon_mythicrpg_book
+  material: YELLOW_DYE
+lemon_mythicrpg_book7:
+  Pack:
+    custom_model_data: 78
+    generate_model: false
+    model: lemon_mythicrpg/lemon_mythicrpg_book7
+  displayname: lemon_mythicrpg_book
+  material: YELLOW_DYE
+lemon_mythicrpg_book_2:
+  Pack:
+    custom_model_data: 79
+    generate_model: false
+    model: lemon_mythicrpg/lemon_mythicrpg_book_2
+  displayname: lemon_mythicrpg_book
+  material: YELLOW_DYE
+lemon_mythicrpg_book1_2:
+  Pack:
+    custom_model_data: 80
+    generate_model: false
+    model: lemon_mythicrpg/lemon_mythicrpg_book1_2
+  displayname: lemon_mythicrpg_book
+  material: YELLOW_DYE
+lemon_mythicrpg_book2_2:
+  Pack:
+    custom_model_data: 81
+    generate_model: false
+    model: lemon_mythicrpg/lemon_mythicrpg_book2_2
+  displayname: lemon_mythicrpg_book
+  material: YELLOW_DYE
+lemon_mythicrpg_book3_2:
+  Pack:
+    custom_model_data: 82
+    generate_model: false
+    model: lemon_mythicrpg/lemon_mythicrpg_book3_2
+  displayname: lemon_mythicrpg_book
+  material: YELLOW_DYE
+lemon_mythicrpg_book4_2:
+  Pack:
+    custom_model_data: 83
+    generate_model: false
+    model: lemon_mythicrpg/lemon_mythicrpg_book4_2
+  displayname: lemon_mythicrpg_book
+  material: YELLOW_DYE
+lemon_mythicrpg_book5_2:
+  Pack:
+    custom_model_data: 84
+    generate_model: false
+    model: lemon_mythicrpg/lemon_mythicrpg_book5_2
+  displayname: lemon_mythicrpg_book
+  material: YELLOW_DYE
+lemon_mythicrpg_book6_2:
+  Pack:
+    custom_model_data: 85
+    generate_model: false
+    model: lemon_mythicrpg/lemon_mythicrpg_book6_2
+  displayname: lemon_mythicrpg_book
+  material: YELLOW_DYE
+lemon_mythicrpg_book7_2:
+  Pack:
+    custom_model_data: 86
+    generate_model: false
+    model: lemon_mythicrpg/lemon_mythicrpg_book7_2
+  displayname: lemon_mythicrpg_book
+  material: YELLOW_DYE
+lemon_mythicrpg_eye:
+  Pack:
+    custom_model_data: 87
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+    - lemon_mythicrpg/lemon_eye_gif
+  displayname: lemon_eye_gif
+  material: YELLOW_DYE
+lemon_indicator_key_gif:
+  Pack:
+    custom_model_data: 88
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+    - lemon_mythicrpg/lemon_indicator_key_gif
+  displayname: lemon_indicator_key_gif
+  material: YELLOW_DYE
+character_1:
+  Pack:
+    custom_model_data: 89
+    generate_model: false
+    model: lemon_mythicrpg/character_1
+  displayname: character_1
+  material: YELLOW_DYE
+character_2:
+  Pack:
+    custom_model_data: 90
+    generate_model: false
+    model: lemon_mythicrpg/character_2
+  displayname: character_2
+  material: YELLOW_DYE
+character_3:
+  Pack:
+    custom_model_data: 91
+    generate_model: false
+    model: lemon_mythicrpg/character_3
+  displayname: character_3
+  material: YELLOW_DYE
+character_4:
+  Pack:
+    custom_model_data: 92
+    generate_model: false
+    model: lemon_mythicrpg/character_4
+  displayname: character_4
+  material: YELLOW_DYE
+character_5:
+  Pack:
+    custom_model_data: 93
+    generate_model: false
+    model: lemon_mythicrpg/character_5
+  displayname: character_5
+  material: YELLOW_DYE
+character_6:
+  Pack:
+    custom_model_data: 94
+    generate_model: false
+    model: lemon_mythicrpg/character_6
+  displayname: character_6
+  material: YELLOW_DYE
+character_7:
+  Pack:
+    custom_model_data: 95
+    generate_model: false
+    model: lemon_mythicrpg/character_7
+  displayname: character_7
+  material: YELLOW_DYE
+character_8:
+  Pack:
+    custom_model_data: 96
+    generate_model: false
+    model: lemon_mythicrpg/character_8
+  displayname: character_8
+  material: YELLOW_DYE
+character_9:
+  Pack:
+    custom_model_data: 97
+    generate_model: false
+    model: lemon_mythicrpg/character_9
+  displayname: character_9
+  material: YELLOW_DYE
+character_10:
+  Pack:
+    custom_model_data: 98
+    generate_model: false
+    model: lemon_mythicrpg/character_10
+  displayname: character_10
+  material: YELLOW_DYE
+class_selection_skillinfo_locked:
+  Pack:
+    custom_model_data: 99
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+    - lemon_mythicrpg/class_selection_skillinfo_locked
+  displayname: class_selection_skillinfo_locked
+  material: YELLOW_DYE
+example_skill_1:
+  Pack:
+    custom_model_data: 100
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+    - lemon_mythicrpg/lemon_exemple_skill_1
+  displayname: example skill
+  material: YELLOW_DYE
+example_skill_2:
+  Pack:
+    custom_model_data: 101
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+    - lemon_mythicrpg/lemon_exemple_skill_2
+  displayname: example skill
+  material: YELLOW_DYE
+example_skill_3:
+  Pack:
+    custom_model_data: 102
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+    - lemon_mythicrpg/lemon_exemple_skill_3
+  displayname: example skill
+  material: YELLOW_DYE
+example_skill_4:
+  Pack:
+    custom_model_data: 103
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+    - lemon_mythicrpg/lemon_exemple_skill_4
+  displayname: example skill
+  material: YELLOW_DYE
+  

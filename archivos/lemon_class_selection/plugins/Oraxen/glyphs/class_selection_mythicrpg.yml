@@ -1,0 +1,60 @@
+class_selection_gui:
+  texture: lemon_mythicrpg/class_selection_gui
+  ascent: 185
+  height: 256
+class_selection_gui2:
+  texture: lemon_mythicrpg/class_selection_gui2
+  ascent: 185
+  height: 256
+class_selection_gui3:
+  texture: lemon_mythicrpg/class_selection_gui3
+  ascent: 185
+  height: 256
+class_selection_gui4:
+  texture: lemon_mythicrpg/class_selection_gui4
+  ascent: 185
+  height: 256
+class_selection_gui5:
+  texture: lemon_mythicrpg/class_selection_gui5
+  ascent: 185
+  height: 256
+class_selection_gui6:
+  texture: lemon_mythicrpg/class_selection_gui6
+  ascent: 185
+  height: 256
+class_selection_gui7:
+  texture: lemon_mythicrpg/class_selection_gui7
+  ascent: 185
+  height: 256
+class_selection_gui8:
+  texture: lemon_mythicrpg/class_selection_gui8
+  ascent: 185
+  height: 256
+class_selection_gui9:
+  texture: lemon_mythicrpg/class_selection_gui9
+  ascent: 185
+  height: 256
+class_selection_gui10:
+  texture: lemon_mythicrpg/class_selection_gui10
+  ascent: 185
+  height: 256
+class_selection_gui_close:
+  texture: lemon_mythicrpg/class_selection_gui_close
+  ascent: 185
+  height: 256
+class_selection_skillinfo:
+  texture: lemon_mythicrpg/class_selection_skillinfo
+  ascent: 185
+  height: 256
+lemon_stat_lore_start:
+  texture: lemon_mythicrpg/lemon_stat_lore_start
+  ascent: 9
+  height: 9
+lemon_stat_lore_mid:
+  texture: lemon_mythicrpg/lemon_stat_lore_mid
+  ascent: 9
+  height: 9
+lemon_stat_lore_end:
+  texture: lemon_mythicrpg/lemon_stat_lore_end
+  ascent: 9
+  height: 9

@@ -1,0 +1,195 @@
+ancient_altar-base:
+  Type: ARMOR_STAND
+  Display: 'Ancient Altar Base'
+  Faction: Structures
+  Health: 20
+  Damage: 0
+  Options:
+    Despawn: persistent
+    AlwaysShowName: true
+    Invisible: false
+    Silent: true
+    Invincible: true
+    DigOutOfGround: true
+    NoAI: true
+    NoGravity: true
+  Variables:
+    debug: true
+    varient: "stone"
+    material: "stone"
+    color: "#FFFFFF"
+  Skills:
+  - skill{s=ancient_altar-init} @self ~onSpawn
+  - skill{s=ancient_altar-init} @self ~onLoad 
+  - skill{s=[
+     - skill{s=ancient_altar-configure} ?~crouching
+     - skill{s=ancient_altar-pairing}
+    ]} @trigger ~onInteract
+  - teleport @spawnlocation ~onTimer:10
+
+ancient_portal-base:
+  Type: ARMOR_STAND
+  Display: 'Ancient Portal Base'
+  Faction: Portals
+  Health: 20
+  Damage: 0
+  Options:
+    Despawn: persistent
+    AlwaysShowName: true
+    Invisible: false
+    Silent: true
+    Invincible: true
+    DigOutOfGround: true
+    NoAI: true
+    NoGravity: true
+  Variables:
+    executecommand: broadcast no command set.
+    debug: true
+    close_upon_entry: true
+    close_when_inactive: true
+    only_keyuser_canenter: true
+    varient: "stone"
+    material: "stone"
+    color: "#FFFFFF"
+  Skills:
+  - skill{s=ancient_portal-init} @self ~onSpawn 
+  - skill{s=ancient_portal-init} @self ~onLoad
+  - skill{s=ancient_portal-configure} @trigger ~onInteract
+  - skill{s=ancient_portal-tick} @self ~onTimer:10
+  - skill{s=ancient_portal-activate} @self ~onSignal:activate
+  - skill{s=ancient_portal-deactivate} @self ~onSignal:deactivate
+
+ancient_altar-desert:
+  Template: ancient_altar-base
+  Display: 'Ancient Altar Desert'
+  Variables:
+    material: sandstone
+    color: "#0096FF"
+    varient: desert
+  
+ancient_portal-desert:
+  Template: ancient_portal-base
+  Display: 'Ancient Portal Desert'
+  Variables:
+    close_upon_entry: false
+    close_when_inactive: false
+    only_keyuser_canenter: false
+    material: sandstone
+    color: "#0096FF"
+    varient: desert
+
+ancient_altar-void:
+  Template: ancient_altar-base
+  Display: 'Ancient Altar Void'
+  Variables:
+    material: blackstone
+    color: "#BF40BF"
+    varient: void
+  
+ancient_portal-void:
+  Template: ancient_portal-base
+  Display: 'Ancient Portal Void'
+  Variables:
+    close_upon_entry: false
+    close_when_inactive: false
+    only_keyuser_canenter: false
+    material: blackstone
+    color: "#BF40BF"
+    varient: void
+
+ancient_altar-magma:
+  Template: ancient_altar-base
+  Display: 'Ancient Altar Magma'
+  Variables:
+    material: red_nether_bricks
+    color: "#FFA500"
+    varient: magma
+  
+ancient_portal-magma:
+  Template: ancient_portal-base
+  Display: 'Ancient Portal Magma'
+  Variables:
+    close_upon_entry: false
+    close_when_inactive: false
+    only_keyuser_canenter: false
+    material: red_nether_bricks
+    color: "#FFA500"
+    varient: magma
+
+ancient_altar-mossy:
+  Template: ancient_altar-base
+  Display: 'Ancient Altar Mossy'
+  Variables:
+    material: stone
+    color: "#FFD700"
+    varient: mossy
+  
+ancient_portal-mossy:
+  Template: ancient_portal-base
+  Display: 'Ancient Portal Mossy'
+  Variables:
+    close_upon_entry: false
+    close_when_inactive: false
+    only_keyuser_canenter: false
+    material: stone
+    color: "#FFD700"
+    varient: mossy
+
+ancient_altar-stone:
+  Template: ancient_altar-base
+  Display: 'Ancient Altar Stone'
+  Variables:
+    material: gray_concrete
+    color: "#E0FFFF"
+    varient: stone
+  
+ancient_portal-stone:
+  Template: ancient_portal-base
+  Display: 'Ancient Portal Stone'
+  Variables:
+    close_upon_entry: false
+    close_when_inactive: false
+    only_keyuser_canenter: false
+    material: gray_concrete
+    color: "#E0FFFF"
+    varient: stone
+
+ancient_altar-terracotta:
+  Template: ancient_altar-base
+  Display: 'Ancient Altar Terracotta'
+  Variables:
+    material: terracotta
+    color: "#90EE90"
+    varient: terracotta
+  
+ancient_portal-terracotta:
+  Template: ancient_portal-base
+  Display: 'Ancient Portal Terracotta'
+  Variables:
+    close_upon_entry: false
+    close_when_inactive: false
+    only_keyuser_canenter: false
+    material: terracotta
+    color: "#90EE90"
+    varient: terracotta
+
+# Deprecated Portal:
+
+#ancient_altar-hell:
+#  Template: ancient_altar-base
+#  Display: 'Ancient Altar Hell'
+#  Variables:
+#    material: red_nether_bricks
+#    color: "#FFA500"
+#    varient: hell
+  
+#ancient_portal-hell:
+#  Template: ancient_portal-base
+#  Display: 'Ancient Portal Hell'
+#  Variables:
+#    close_upon_entry: false
+#    close_when_inactive: false
+#    only_keyuser_canenter: false
+#    material: red_nether_bricks
+#    color: "#FFA500"
+# 249NT0CRVWJUL7HF8IS

@@ -1,0 +1,29 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/leather_boots"
+	},
+	"overrides": [
+		{ "predicate": { "custom_model_data": 1001}, "model": "workshop_six:essentials/nature_decor/clover_flowers" },
+		{ "predicate": { "custom_model_data": 1002}, "model": "workshop_six:essentials/nature_decor/crystal" },
+		{ "predicate": { "custom_model_data": 1003}, "model": "workshop_six:essentials/nature_decor/ore" },
+		{ "predicate": { "custom_model_data": 1004}, "model": "workshop_six:essentials/market_furniture/canopy_flat" },
+		{ "predicate": { "custom_model_data": 1005}, "model": "workshop_six:essentials/market_furniture/canopy_sloped" },
+		{ "predicate": { "custom_model_data": 1006}, "model": "workshop_six:essentials/market_furniture/shop_cart" },
+		{ "predicate": { "custom_model_data": 1007}, "model": "workshop_six:essentials/interior_furniture/arm_chair" },
+		{ "predicate": { "custom_model_data": 1008}, "model": "workshop_six:essentials/interior_furniture/bed_bunk" },
+		{ "predicate": { "custom_model_data": 1009}, "model": "workshop_six:essentials/interior_furniture/bed_double" },
+		{ "predicate": { "custom_model_data": 1010}, "model": "workshop_six:essentials/interior_furniture/bed_single" },
+		{ "predicate": { "custom_model_data": 1011}, "model": "workshop_six:essentials/interior_furniture/chair_cushion" },
+		{ "predicate": { "custom_model_data": 1012}, "model": "workshop_six:essentials/interior_furniture/coffee_table_cloth" },
+		{ "predicate": { "custom_model_data": 1013}, "model": "workshop_six:essentials/interior_furniture/lamp" },
+		{ "predicate": { "custom_model_data": 1014}, "model": "workshop_six:essentials/interior_furniture/lamp_hanging" },
+		{ "predicate": { "custom_model_data": 1015}, "model": "workshop_six:essentials/interior_furniture/lamp_tall" },
+		{ "predicate": { "custom_model_data": 1016}, "model": "workshop_six:essentials/interior_furniture/pot_1" },
+		{ "predicate": { "custom_model_data": 1017}, "model": "workshop_six:essentials/interior_furniture/pot_2" },
+		{ "predicate": { "custom_model_data": 1018}, "model": "workshop_six:essentials/interior_furniture/pot_3" },
+		{ "predicate": { "custom_model_data": 1019}, "model": "workshop_six:essentials/interior_furniture/sofa" },
+		{ "predicate": { "custom_model_data": 1020}, "model": "workshop_six:essentials/interior_furniture/stool_cushion" },
+		{ "predicate": { "custom_model_data": 1021}, "model": "workshop_six:essentials/interior_furniture/table_small_cloth" }			  
+	]
+}

@@ -1,0 +1,603 @@
+lemon_class_selection_sound_eye:
+  Conditions:
+  - variableEquals{var=caster.key;value="3"} castinstead lemon_class_selection_open
+  Skills:
+  - sound{s=entity.enderman.scream;v=2;p=2} @Self
+  - sound{s=entity.witch.celebrate;v=2;p=2} @Self
+  
+lemon_class_selection_sound_fail:
+  Skills:
+  - sound{s=entity.villager.no;v=1;p=1} @Self
+
+lemon_class_selection_key_var_start:
+  Skills:
+  - setvariable{var=caster.key;value="1";type=INTEGER} @self
+  - setvariable{var=caster.class_point;value="%mmocore_class_points%";type=INTEGER} @self
+  
+lemon_class_selection_key_1:
+  Skills:
+  - setvariable{var=caster.key;value="1";type=INTEGER} @self
+  - command{c="goop nbt cModelData <target.name> c<KEY_1> 88"} @Self
+  - command{c="goop nbt cModelData <target.name> c<KEY_2> 2"} @Self  
+  - command{c="goop nbt cModelData <target.name> c<KEY_3> 2"} @Self  
+  - command{c="goop nbt cModelData <target.name> c<KEY_4> 2"} @Self  
+  - sound{s=block.chain.hit;v=1;p=1} @Self
+lemon_class_selection_key_2:
+  Skills:
+  - setvariable{var=caster.key;value="2";type=INTEGER} @self
+  - command{c="goop nbt cModelData <target.name> c<KEY_1> 2"} @Self
+  - command{c="goop nbt cModelData <target.name> c<KEY_2> 88"} @Self  
+  - command{c="goop nbt cModelData <target.name> c<KEY_3> 2"} @Self  
+  - command{c="goop nbt cModelData <target.name> c<KEY_4> 2"} @Self 
+  - sound{s=block.chain.hit;v=1;p=1} @Self 
+lemon_class_selection_key_3:
+  Skills:
+  - setvariable{var=caster.key;value="3";type=INTEGER} @self
+  - command{c="goop nbt cModelData <target.name> c<KEY_1> 2"} @Self
+  - command{c="goop nbt cModelData <target.name> c<KEY_2> 2"} @Self  
+  - command{c="goop nbt cModelData <target.name> c<KEY_3> 88"} @Self  
+  - command{c="goop nbt cModelData <target.name> c<KEY_4> 2"} @Self  
+  - sound{s=item.axe.strip;v=1;p=1} @Self
+lemon_class_selection_key_4:
+  Skills:
+  - setvariable{var=caster.key;value="4";type=INTEGER} @self
+  - command{c="goop nbt cModelData <target.name> c<KEY_1> 2"} @Self
+  - command{c="goop nbt cModelData <target.name> c<KEY_2> 2"} @Self  
+  - command{c="goop nbt cModelData <target.name> c<KEY_3> 2"} @Self  
+  - command{c="goop nbt cModelData <target.name> c<KEY_4> 88"} @Self  
+  - sound{s=block.chain.hit;v=1;p=1} @Self
+  
+lemon_class_selection_key_next:
+  Cooldown: 0.1
+  Conditions:
+  - variableEquals{var=caster.key;value="1"} castinstead lemon_class_selection_key_next_1
+  - variableEquals{var=caster.key;value="2"} castinstead lemon_class_selection_key_next_2
+  - variableEquals{var=caster.key;value="3"} castinstead lemon_class_selection_key_next_3
+  - variableEquals{var=caster.key;value="4"} castinstead lemon_class_selection_key_next_4
+  - variableisset{var=caster.key} false 
+  Skills:
+  - setvariable{var=caster.key;value="2";type=INTEGER} @self
+  - command{c="goop nbt cModelData <target.name> c<KEY_2> 88"} @Self
+  - command{c="goop nbt cModelData <target.name> c<KEY_1> 2"} @Self  
+  - sound{s=block.chain.fall;v=1;p=1} @Self
+
+lemon_class_selection_key_next_1:
+  Skills:
+  - setvariable{var=caster.key;value="2";type=INTEGER} @self
+  - command{c="goop nbt cModelData <target.name> c<KEY_2> 88"} @Self
+  - command{c="goop nbt cModelData <target.name> c<KEY_1> 2"} @Self
+  - sound{s=block.chain.fall;v=1;p=1} @Self
+lemon_class_selection_key_next_2:
+  Skills:
+  - setvariable{var=caster.key;value="3";type=INTEGER} @self
+  - command{c="goop nbt cModelData <target.name> c<KEY_3> 88"} @Self
+  - command{c="goop nbt cModelData <target.name> c<KEY_2> 2"} @Self
+  - sound{s=item.axe.strip;v=1;p=1} @Self
+lemon_class_selection_key_next_3:
+  Skills:
+  - setvariable{var=caster.key;value="4";type=INTEGER} @self
+  - command{c="goop nbt cModelData <target.name> c<KEY_4> 88"} @Self
+  - command{c="goop nbt cModelData <target.name> c<KEY_3> 2"} @Self
+  - sound{s=block.chain.fall;v=1;p=1} @Self
+lemon_class_selection_key_next_4:
+  Skills:
+  - setvariable{var=caster.key;value="4";type=INTEGER} @self
+  - command{c="goop nbt cModelData <target.name> c<KEY_4> 88"} @Self
+  - command{c="goop nbt cModelData <target.name> c<KEY_3> 2"} @Self
+  - sound{s=block.chain.fall;v=1;p=1} @Self
+  
+lemon_class_selection_key_previous:
+  Cooldown: 0.1
+  Conditions:
+  - variableEquals{var=caster.key;value="1"} castinstead lemon_class_selection_key_previous_1
+  - variableEquals{var=caster.key;value="2"} castinstead lemon_class_selection_key_previous_2
+  - variableEquals{var=caster.key;value="3"} castinstead lemon_class_selection_key_previous_3
+  - variableEquals{var=caster.key;value="4"} castinstead lemon_class_selection_key_previous_4
+  - variableisset{var=caster.key} false 
+  Skills:
+  - setvariable{var=caster.key;value="3";type=INTEGER} @self
+  - command{c="goop nbt cModelData <target.name> c<KEY_3> 88"} @Self
+  - command{c="goop nbt cModelData <target.name> c<KEY_4> 2"} @Self
+  - sound{s=block.chain.fall;v=1;p=1} @Self
+lemon_class_selection_key_previous_1:
+  Skills:
+  - setvariable{var=caster.key;value="1";type=INTEGER} @self
+  - command{c="goop nbt cModelData <target.name> c<KEY_1> 88"} @Self
+  - command{c="goop nbt cModelData <target.name> c<KEY_2> 2"} @Self
+  - sound{s=block.chain.fall;v=1;p=1} @Self
+lemon_class_selection_key_previous_2:
+  Skills:
+  - setvariable{var=caster.key;value="1";type=INTEGER} @self
+  - command{c="goop nbt cModelData <target.name> c<KEY_1> 88"} @Self
+  - command{c="goop nbt cModelData <target.name> c<KEY_2> 2"} @Self
+  - sound{s=block.chain.fall;v=1;p=1} @Self
+lemon_class_selection_key_previous_3:
+  Skills:
+  - setvariable{var=caster.key;value="2";type=INTEGER} @self
+  - command{c="goop nbt cModelData <target.name> c<KEY_2> 88"} @Self
+  - command{c="goop nbt cModelData <target.name> c<KEY_3> 2"} @Self
+  - sound{s=block.chain.fall;v=1;p=1} @Self
+lemon_class_selection_key_previous_4:
+  Skills:
+  - setvariable{var=caster.key;value="3";type=INTEGER} @self
+  - command{c="goop nbt cModelData <target.name> c<KEY_3> 88"} @Self
+  - command{c="goop nbt cModelData <target.name> c<KEY_4> 2"} @Self
+  - sound{s=item.axe.strip;v=1;p=1} @Self
+  
+#FIRST PAGE AND CLOSE ONE
+
+lemon_class_selection_open:
+  Cooldown: 1
+  Conditions:
+  - variableEquals{var=caster.key;value="3"} orElseCast lemon_class_selection_sound_fail
+  Skills:
+  - command{c="goop nbt cModelData <target.name> c<EYE> 2"} @Self
+  - sound{s=entity.wither.hurt;v=0.2;p=2} @Self
+  - sound{s=entity.endermite.death;v=1;p=2;delay=4} @Self
+  - delay 24
+  - setvariable{var=caster.key;value="1";type=INTEGER} @self
+  - command{c="goop containers open lemon_class_selection_character_1 <target.name>"} @Self
+  - sound{s=block.enchantment_table.use;v=0.4;p=1} @Self
+  - sound{s=entity.ender_eye.death;v=1;p=1} @Self
+  - delay 2
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 71"} @Self
+  - delay 3
+  - command{c="goop nbt cModelData <target.name> c<BOOK> +1";repeat=6;repeatinterval=3} @Self
+  - sound{s=item.book.page_turn;v=1;p=1} @Self
+  - delay 24
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 2"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 89"} @Self
+lemon_class_selection_close:
+  Cooldown: 1
+  Skills:
+  - command{c="goop containers open lemon_class_selection_close <target.name>"} @Self
+  - sound{s=item.book.put;v=2;p=0.6} @Self
+
+#NEXT
+
+lemon_class_selection_next_page_goto2:
+  Cooldown: 1.5
+  Skills:
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 71"} @Self
+  - delay 3
+  - command{c="goop nbt cModelData <target.name> c<BOOK> +1";repeat=6;repeatinterval=3} @Self
+  - sound{s=item.book.page_turn;v=1;p=1} @Self
+  - delay 24
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 2"} @Self
+  - command{c="goop containers open lemon_class_selection_character_2 <target.name>"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 90"} @Self
+
+lemon_class_selection_next_page_goto3:
+  Cooldown: 1.5
+  Skills:
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 71"} @Self
+  - delay 3
+  - command{c="goop nbt cModelData <target.name> c<BOOK> +1";repeat=6;repeatinterval=3} @Self
+  - sound{s=item.book.page_turn;v=1;p=1} @Self
+  - delay 24
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 2"} @Self
+  - command{c="goop containers open lemon_class_selection_character_3 <target.name>"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 91"} @Self
+
+lemon_class_selection_next_page_goto4:
+  Cooldown: 1.5
+  Skills:
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 71"} @Self
+  - delay 3
+  - command{c="goop nbt cModelData <target.name> c<BOOK> +1";repeat=6;repeatinterval=3} @Self
+  - sound{s=item.book.page_turn;v=1;p=1} @Self
+  - delay 24
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 2"} @Self
+  - command{c="goop containers open lemon_class_selection_character_4 <target.name>"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 92"} @Self
+
+lemon_class_selection_next_page_goto5:
+  Cooldown: 1.5
+  Skills:
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 71"} @Self
+  - delay 3
+  - command{c="goop nbt cModelData <target.name> c<BOOK> +1";repeat=6;repeatinterval=3} @Self
+  - sound{s=item.book.page_turn;v=1;p=1} @Self
+  - delay 24
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 2"} @Self
+  - command{c="goop containers open lemon_class_selection_character_5 <target.name>"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 93"} @Self
+
+lemon_class_selection_next_page_goto6:
+  Cooldown: 1.5
+  Skills:
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 71"} @Self
+  - delay 3
+  - command{c="goop nbt cModelData <target.name> c<BOOK> +1";repeat=6;repeatinterval=3} @Self
+  - sound{s=item.book.page_turn;v=1;p=1} @Self
+  - delay 24
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 2"} @Self
+  - command{c="goop containers open lemon_class_selection_character_6 <target.name>"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 94"} @Self
+
+lemon_class_selection_next_page_goto7:
+  Cooldown: 1.5
+  Skills:
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 71"} @Self
+  - delay 3
+  - command{c="goop nbt cModelData <target.name> c<BOOK> +1";repeat=6;repeatinterval=3} @Self
+  - sound{s=item.book.page_turn;v=1;p=1} @Self
+  - delay 24
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 2"} @Self
+  - command{c="goop containers open lemon_class_selection_character_7 <target.name>"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 95"} @Self
+
+lemon_class_selection_next_page_goto8:
+  Cooldown: 1.5
+  Skills:
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 71"} @Self
+  - delay 3
+  - command{c="goop nbt cModelData <target.name> c<BOOK> +1";repeat=6;repeatinterval=3} @Self
+  - sound{s=item.book.page_turn;v=1;p=1} @Self
+  - delay 24
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 2"} @Self
+  - command{c="goop containers open lemon_class_selection_character_8 <target.name>"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 96"} @Self
+
+lemon_class_selection_next_page_goto9:
+  Cooldown: 1.5
+  Skills:
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 71"} @Self
+  - delay 3
+  - command{c="goop nbt cModelData <target.name> c<BOOK> +1";repeat=6;repeatinterval=3} @Self
+  - sound{s=item.book.page_turn;v=1;p=1} @Self
+  - delay 24
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 2"} @Self
+  - command{c="goop containers open lemon_class_selection_character_9 <target.name>"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 97"} @Self
+
+lemon_class_selection_next_page_goto10:
+  Cooldown: 1.5
+  Skills:
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 71"} @Self
+  - delay 3
+  - command{c="goop nbt cModelData <target.name> c<BOOK> +1";repeat=6;repeatinterval=3} @Self
+  - sound{s=item.book.page_turn;v=1;p=1} @Self
+  - delay 24
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 2"} @Self
+  - command{c="goop containers open lemon_class_selection_character_10 <target.name>"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 98"} @Self
+
+lemon_class_selection_next_page_goto11:
+  Cooldown: 1.5
+  Skills:
+  - sound{s=entity.villager.no;v=1;p=1} @Self
+  #COMING SOON
+
+#PREVIOUS
+
+lemon_class_selection_previous_page_backto1:
+  Cooldown: 1.5
+  Skills:
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 79"} @Self
+  - delay 3
+  - command{c="goop nbt cModelData <target.name> c<BOOK> +1";repeat=6;repeatinterval=3} @Self
+  - sound{s=item.book.page_turn;v=1;p=1} @Self
+  - delay 24
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 2"} @Self
+  - command{c="goop containers open lemon_class_selection_character_1 <target.name>"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 89"} @Self
+  
+lemon_class_selection_previous_page_backto2:
+  Cooldown: 1.5
+  Skills:
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 79"} @Self
+  - delay 3
+  - command{c="goop nbt cModelData <target.name> c<BOOK> +1";repeat=6;repeatinterval=3} @Self
+  - sound{s=item.book.page_turn;v=1;p=1} @Self
+  - delay 24
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 2"} @Self
+  - command{c="goop containers open lemon_class_selection_character_2 <target.name>"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 90"} @Self
+  
+lemon_class_selection_previous_page_backto3:
+  Cooldown: 1.5
+  Skills:
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 79"} @Self
+  - delay 3
+  - command{c="goop nbt cModelData <target.name> c<BOOK> +1";repeat=6;repeatinterval=3} @Self
+  - sound{s=item.book.page_turn;v=1;p=1} @Self
+  - delay 24
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 2"} @Self
+  - command{c="goop containers open lemon_class_selection_character_3 <target.name>"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 91"} @Self
+  
+lemon_class_selection_previous_page_backto4:
+  Cooldown: 1.5
+  Skills:
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 79"} @Self
+  - delay 3
+  - command{c="goop nbt cModelData <target.name> c<BOOK> +1";repeat=6;repeatinterval=3} @Self
+  - sound{s=item.book.page_turn;v=1;p=1} @Self
+  - delay 24
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 2"} @Self
+  - command{c="goop containers open lemon_class_selection_character_4 <target.name>"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 92"} @Self
+  
+lemon_class_selection_previous_page_backto5:
+  Cooldown: 1.5
+  Skills:
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 79"} @Self
+  - delay 3
+  - command{c="goop nbt cModelData <target.name> c<BOOK> +1";repeat=6;repeatinterval=3} @Self
+  - sound{s=item.book.page_turn;v=1;p=1} @Self
+  - delay 24
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 2"} @Self
+  - command{c="goop containers open lemon_class_selection_character_5 <target.name>"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 93"} @Self
+  
+lemon_class_selection_previous_page_backto6:
+  Cooldown: 1.5
+  Skills:
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 79"} @Self
+  - delay 3
+  - command{c="goop nbt cModelData <target.name> c<BOOK> +1";repeat=6;repeatinterval=3} @Self
+  - sound{s=item.book.page_turn;v=1;p=1} @Self
+  - delay 24
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 2"} @Self
+  - command{c="goop containers open lemon_class_selection_character_6 <target.name>"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 94"} @Self
+  
+lemon_class_selection_previous_page_backto7:
+  Cooldown: 1.5
+  Skills:
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 79"} @Self
+  - delay 3
+  - command{c="goop nbt cModelData <target.name> c<BOOK> +1";repeat=6;repeatinterval=3} @Self
+  - sound{s=item.book.page_turn;v=1;p=1} @Self
+  - delay 24
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 2"} @Self
+  - command{c="goop containers open lemon_class_selection_character_7 <target.name>"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 95"} @Self
+  
+lemon_class_selection_previous_page_backto8:
+  Cooldown: 1.5
+  Skills:
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 79"} @Self
+  - delay 3
+  - command{c="goop nbt cModelData <target.name> c<BOOK> +1";repeat=6;repeatinterval=3} @Self
+  - sound{s=item.book.page_turn;v=1;p=1} @Self
+  - delay 24
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 2"} @Self
+  - command{c="goop containers open lemon_class_selection_character_8 <target.name>"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 96"} @Self
+  
+lemon_class_selection_previous_page_backto9:
+  Cooldown: 1.5
+  Skills:
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 79"} @Self
+  - delay 3
+  - command{c="goop nbt cModelData <target.name> c<BOOK> +1";repeat=6;repeatinterval=3} @Self
+  - sound{s=item.book.page_turn;v=1;p=1} @Self
+  - delay 24
+  - command{c="goop nbt cModelData <target.name> c<BOOK> 2"} @Self
+  - command{c="goop containers open lemon_class_selection_character_9 <target.name>"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 97"} @Self
+
+#CONFIRM BUTTON
+  
+lemon_class_selection_confirm1:
+  Cooldown: 1.5
+  Conditions:
+  - variableInRange{var=caster.class_point;value=1to999} orElseCast lemon_class_selection_sound_fail
+  Skills:
+  - sound{s=ui.toast.challenge_complete;v=1;p=2} @Self
+  - closeinventory{forcesync=true} @self
+  - sendtitle{title="MAGE";subtitle="harry you're a wizard!";d=60} @self
+  - command{c="mmocore admin class mage <target.name>"} @Self
+  - command{c="mmocore admin class-points give <target.name> -1"} @Self
+  
+lemon_class_selection_confirm2:
+  Cooldown: 1.5
+  Conditions:
+  - variableInRange{var=caster.class_point;value=1to999} orElseCast lemon_class_selection_sound_fail
+  Skills:
+  - sound{s=ui.toast.challenge_complete;v=1;p=2} @Self
+  - closeinventory{forcesync=true} @self
+  - sendtitle{title="MAGE";subtitle="harry you're a wizard!";d=60} @self
+  - command{c="mmocore admin class mage <target.name>"} @Self
+  - command{c="mmocore admin class-points give <target.name> -1"} @Self
+  
+lemon_class_selection_confirm3:
+  Cooldown: 1.5
+  Conditions:
+  - variableInRange{var=caster.class_point;value=1to999} orElseCast lemon_class_selection_sound_fail
+  Skills:
+  - sound{s=ui.toast.challenge_complete;v=1;p=2} @Self
+  - closeinventory{forcesync=true} @self
+  - sendtitle{title="MAGE";subtitle="harry you're a wizard!";d=60} @self
+  - command{c="mmocore admin class mage <target.name>"} @Self
+  - command{c="mmocore admin class-points give <target.name> -1"} @Self
+  
+lemon_class_selection_confirm4:
+  Cooldown: 1.5
+  Conditions:
+  - variableInRange{var=caster.class_point;value=1to999} orElseCast lemon_class_selection_sound_fail
+  Skills:
+  - sound{s=ui.toast.challenge_complete;v=1;p=2} @Self
+  - closeinventory{forcesync=true} @self
+  - sendtitle{title="MAGE";subtitle="harry you're a wizard!";d=60} @self
+  - command{c="mmocore admin class mage <target.name>"} @Self
+  - command{c="mmocore admin class-points give <target.name> -1"} @Self
+  
+lemon_class_selection_confirm5:
+  Cooldown: 1.5
+  Conditions:
+  - variableInRange{var=caster.class_point;value=1to999} orElseCast lemon_class_selection_sound_fail
+  Skills:
+  - sound{s=ui.toast.challenge_complete;v=1;p=2} @Self
+  - closeinventory{forcesync=true} @self
+  - sendtitle{title="MAGE";subtitle="harry you're a wizard!";d=60} @self
+  - command{c="mmocore admin class mage <target.name>"} @Self
+  - command{c="mmocore admin class-points give <target.name> -1"} @Self
+  
+lemon_class_selection_confirm6:
+  Cooldown: 1.5
+  Conditions:
+  - variableInRange{var=caster.class_point;value=1to999} orElseCast lemon_class_selection_sound_fail
+  Skills:
+  - sound{s=ui.toast.challenge_complete;v=1;p=2} @Self
+  - closeinventory{forcesync=true} @self
+  - sendtitle{title="MAGE";subtitle="harry you're a wizard!";d=60} @self
+  - command{c="mmocore admin class mage <target.name>"} @Self
+  - command{c="mmocore admin class-points give <target.name> -1"} @Self
+  
+lemon_class_selection_confirm7:
+  Cooldown: 1.5
+  Conditions:
+  - variableInRange{var=caster.class_point;value=1to999} orElseCast lemon_class_selection_sound_fail
+  Skills:
+  - sound{s=ui.toast.challenge_complete;v=1;p=2} @Self
+  - closeinventory{forcesync=true} @self
+  - sendtitle{title="MAGE";subtitle="harry you're a wizard!";d=60} @self
+  - command{c="mmocore admin class mage <target.name>"} @Self
+  - command{c="mmocore admin class-points give <target.name> -1"} @Self
+  
+lemon_class_selection_confirm8:
+  Cooldown: 1.5
+  Conditions:
+  - variableInRange{var=caster.class_point;value=1to999} orElseCast lemon_class_selection_sound_fail
+  Skills:
+  - sound{s=ui.toast.challenge_complete;v=1;p=2} @Self
+  - closeinventory{forcesync=true} @self
+  - sendtitle{title="MAGE";subtitle="harry you're a wizard!";d=60} @self
+  - command{c="mmocore admin class mage <target.name>"} @Self
+  - command{c="mmocore admin class-points give <target.name> -1"} @Self
+  
+lemon_class_selection_confirm9:
+  Cooldown: 1.5
+  Conditions:
+  - variableInRange{var=caster.class_point;value=1to999} orElseCast lemon_class_selection_sound_fail
+  Skills:
+  - sound{s=ui.toast.challenge_complete;v=1;p=2} @Self
+  - closeinventory{forcesync=true} @self
+  - sendtitle{title="MAGE";subtitle="harry you're a wizard!";d=60} @self
+  - command{c="mmocore admin class mage <target.name>"} @Self
+  - command{c="mmocore admin class-points give <target.name> -1"} @Self
+  
+lemon_class_selection_confirm10:
+  Cooldown: 1.5
+  Conditions:
+  - variableInRange{var=caster.class_point;value=1to999} orElseCast lemon_class_selection_sound_fail
+  Skills:
+  - sound{s=ui.toast.challenge_complete;v=1;p=2} @Self
+  - closeinventory{forcesync=true} @self
+  - sendtitle{title="MAGE";subtitle="harry you're a wizard!";d=60} @self
+  - command{c="mmocore admin class mage <target.name>"} @Self
+  - command{c="mmocore admin class-points give <target.name> -1"} @Self
+
+#SKILLS PREVIEW
+lemon_class_selection_open_0:
+  Skills:
+  - command{c="goop containers open lemon_class_selection_character_1 <target.name>"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 89"} @Self
+  - sound{s=ui.button.click;v=1;p=1} @Self 
+  
+lemon_class_selection_open_2:
+  Skills:
+  - command{c="goop containers open lemon_class_selection_character_2 <target.name>"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 90"} @Self
+  
+lemon_class_selection_open_3:
+  Skills:
+  - command{c="goop containers open lemon_class_selection_character_3 <target.name>"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 91"} @Self
+  - sound{s=ui.button.click;v=1;p=1} @Self 
+  
+lemon_class_selection_open_4:
+  Skills:
+  - command{c="goop containers open lemon_class_selection_character_4 <target.name>"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 92"} @Self
+  - sound{s=ui.button.click;v=1;p=1} @Self 
+  
+lemon_class_selection_open_5:
+  Skills:
+  - command{c="goop containers open lemon_class_selection_character_5 <target.name>"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 93"} @Self
+  - sound{s=ui.button.click;v=1;p=1} @Self 
+  
+lemon_class_selection_open_6:
+  Skills:
+  - command{c="goop containers open lemon_class_selection_character_6 <target.name>"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 94"} @Self
+  - sound{s=ui.button.click;v=1;p=1} @Self 
+  
+lemon_class_selection_open_7:
+  Skills:
+  - command{c="goop containers open lemon_class_selection_character_7 <target.name>"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 95"} @Self
+  - sound{s=ui.button.click;v=1;p=1} @Self 
+  
+lemon_class_selection_open_8:
+  Skills:
+  - command{c="goop containers open lemon_class_selection_character_8 <target.name>"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 96"} @Self
+  - sound{s=ui.button.click;v=1;p=1} @Self 
+  
+lemon_class_selection_open_9:
+  Skills:
+  - command{c="goop containers open lemon_class_selection_character_9 <target.name>"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 97"} @Self
+  - sound{s=ui.button.click;v=1;p=1} @Self 
+  
+lemon_class_selection_open_10:
+  Skills:
+  - command{c="goop containers open lemon_class_selection_character_10 <target.name>"} @Self
+  - command{c="goop nbt cModelData <target.name> c<HEAD> 98"} @Self
+  - sound{s=ui.button.click;v=1;p=1} @Self 
+
+lemon_class_selection_page_1_skill:
+  Skills:
+  - command{c="goop containers open lemon_class_selection_page_1_skill <target.name>"} @Self
+  - sound{s=ui.button.click;v=1;p=1} @Self 
+
+lemon_class_selection_page_2_skill:
+  Skills:
+  - command{c="goop containers open lemon_class_selection_page_2_skill <target.name>"} @Self
+  - sound{s=ui.button.click;v=1;p=1} @Self 
+
+lemon_class_selection_page_3_skill:
+  Skills:
+  - command{c="goop containers open lemon_class_selection_page_3_skill <target.name>"} @Self
+  - sound{s=ui.button.click;v=1;p=1} @Self 
+
+lemon_class_selection_page_4_skill:
+  Skills:
+  - command{c="goop containers open lemon_class_selection_page_4_skill <target.name>"} @Self
+  - sound{s=ui.button.click;v=1;p=1} @Self 
+
+lemon_class_selection_page_5_skill:
+  Skills:
+  - command{c="goop containers open lemon_class_selection_page_5_skill <target.name>"} @Self
+  - sound{s=ui.button.click;v=1;p=1} @Self 
+
+lemon_class_selection_page_6_skill:
+  Skills:
+  - command{c="goop containers open lemon_class_selection_page_6_skill <target.name>"} @Self
+  - sound{s=ui.button.click;v=1;p=1} @Self 
+
+lemon_class_selection_page_7_skill:
+  Skills:
+  - command{c="goop containers open lemon_class_selection_page_7_skill <target.name>"} @Self
+  - sound{s=ui.button.click;v=1;p=1} @Self 
+
+lemon_class_selection_page_8_skill:
+  Skills:
+  - command{c="goop containers open lemon_class_selection_page_8_skill <target.name>"} @Self
+  - sound{s=ui.button.click;v=1;p=1} @Self 
+
+lemon_class_selection_page_9_skill:
+  Skills:
+  - command{c="goop containers open lemon_class_selection_page_9_skill <target.name>"} @Self
+  - sound{s=ui.button.click;v=1;p=1} @Self 
+
+lemon_class_selection_page_10_skill:
+  Skills:
+  - command{c="goop containers open lemon_class_selection_page_10_skill <target.name>"} @Self
+  - sound{s=ui.button.click;v=1;p=1} @Self 
+ 
