@@ -4,11 +4,11 @@ plugins {
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
 }
 
-group = property('mod_group_id')
-version = property('mod_version')
+group = project.mod_group_id
+version = project.mod_version
 
 base {
-    archivesName = property('mod_id')
+    archivesName = project.mod_id
 }
 
 java {
@@ -18,7 +18,7 @@ java {
 }
 
 minecraft {
-    mappings channel: 'official', version: property('minecraft_version')
+    mappings channel: 'official', version: project.minecraft_version
 
     runs {
         client {
@@ -27,7 +27,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                "${property('mod_id')}" {
+                "${project.mod_id}" {
                     source sourceSets.main
                 }
             }
@@ -39,7 +39,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                "${property('mod_id')}" {
+                "${project.mod_id}" {
                     source sourceSets.main
                 }
             }
@@ -54,16 +54,16 @@ repositories {
 }
 
 dependencies {
-    minecraft "net.minecraftforge:forge:${property('minecraft_version')}-${property('forge_version')}"
+    minecraft "net.minecraftforge:forge:${project.minecraft_version}-${project.forge_version}"
 }
 
 tasks.named('processResources', ProcessResources).configure {
     var replaceProperties = [
-            minecraft_version: minecraft_version, minecraft_version_range: minecraft_version_range,
-            forge_version: forge_version, forge_version_range: forge_version_range,
-            loader_version_range: loader_version_range,
-            mod_id: mod_id, mod_name: mod_name, mod_version: mod_version,
-            mod_license: mod_license, mod_authors: mod_authors, mod_group_id: mod_group_id
+            minecraft_version: project.minecraft_version, minecraft_version_range: project.minecraft_version_range,
+            forge_version: project.forge_version, forge_version_range: project.forge_version_range,
+            loader_version_range: project.loader_version_range,
+            mod_id: project.mod_id, mod_name: project.mod_name, mod_version: project.mod_version,
+            mod_license: project.mod_license, mod_authors: project.mod_authors, mod_group_id: project.mod_group_id
     ]
     inputs.properties replaceProperties
 
@@ -75,12 +75,12 @@ tasks.named('processResources', ProcessResources).configure {
 tasks.named('jar', Jar).configure {
     manifest {
         attributes([
-                'Specification-Title'     : property('mod_id'),
-                'Specification-Vendor'    : property('mod_authors'),
+                'Specification-Title'     : project.mod_id,
+                'Specification-Vendor'    : project.mod_authors,
                 'Specification-Version'   : '1',
                 'Implementation-Title'    : project.name,
                 'Implementation-Version'  : project.jar.archiveVersion,
-                'Implementation-Vendor'   : property('mod_authors'),
+                'Implementation-Vendor'   : project.mod_authors,
                 'Implementation-Timestamp': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
