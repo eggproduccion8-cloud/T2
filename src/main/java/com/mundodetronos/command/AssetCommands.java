@@ -1,12 +1,10 @@
 package com.mundodetronos.command;
 
 import com.mojang.brigadier.CommandDispatcher;
-import com.mundodetronos.MundoDeTronos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
 import net.minecraft.network.chat.Component;
 
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,8 +40,9 @@ public class AssetCommands {
             if (AssetCommands.class.getResource(texPath) == null) errors.add("Missing texture: " + texPath);
         }
 
+        final int totalChecked = checked;
         if (errors.isEmpty()) {
-            source.sendSuccess(() -> Component.literal("Asset Validation OK! Checked " + checked + " NPCs. Zero missing textures/models."), true);
+            source.sendSuccess(() -> Component.literal("Asset Validation OK! Checked " + totalChecked + " NPCs. Zero missing textures/models."), true);
             return 1;
         } else {
             source.sendFailure(Component.literal("Asset Validation Failed (" + errors.size() + " errors):\n" + String.join("\n", errors)));
