@@ -1,0 +1,1 @@
+['archer.geo.json', 'miner.geo.json', 'king.geo.json', 'wizard.geo.json', 'adventurer.geo.json', 'tavern.geo.json', 'butcher.geo.json', 'farmer.geo.json', 'guard.geo.json', 'blacksmith.geo.json', 'pirate.geo.json']
