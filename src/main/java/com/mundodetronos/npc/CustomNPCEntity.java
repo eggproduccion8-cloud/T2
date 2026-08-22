@@ -1,9 +1,5 @@
 package com.mundodetronos.npc;
 
-import com.mundodetronos.MundoDeTronos;
-import com.mundodetronos.model.BlockbenchModel;
-import com.mundodetronos.model.ModelCache;
-import com.mundodetronos.animation.AnimationDefinition;
 import com.mundodetronos.util.AssetTextureResolver;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
@@ -20,20 +16,23 @@ import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
+import software.bernie.geckolib.animatable.GeoEntity;
+import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
+import software.bernie.geckolib.core.animation.AnimatableManager;
+import software.bernie.geckolib.core.animation.AnimationController;
+import software.bernie.geckolib.core.animation.RawAnimation;
+import software.bernie.geckolib.core.object.PlayState;
+import software.bernie.geckolib.util.GeckoLibUtil;
 
-import java.util.Map;
-
-public class CustomNPCEntity extends PathfinderMob {
+public class CustomNPCEntity extends PathfinderMob implements GeoEntity {
 
     private static final EntityDataAccessor<String> DATA_NPC_TYPE = SynchedEntityData.defineId(CustomNPCEntity.class, EntityDataSerializers.STRING);
     private static final EntityDataAccessor<Float> DATA_SCALE = SynchedEntityData.defineId(CustomNPCEntity.class, EntityDataSerializers.FLOAT);
-    private static final EntityDataAccessor<String> DATA_TRIGGERED_ANIMATION = SynchedEntityData.defineId(CustomNPCEntity.class, EntityDataSerializers.STRING);
 
-    @OnlyIn(Dist.CLIENT)
-    private NPCAnimationController animationController;
-    private String lastNpcType = "";
+    private static final RawAnimation IDLE_ANIM = RawAnimation.begin().thenLoop("idle");
+    private static final RawAnimation WALK_ANIM = RawAnimation.begin().thenLoop("walk");
+
+    private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 
     public CustomNPCEntity(EntityType<? extends PathfinderMob> type, Level level) {
         super(type, level);
@@ -44,7 +43,6 @@ public class CustomNPCEntity extends PathfinderMob {
         super.defineSynchedData();
         this.entityData.define(DATA_NPC_TYPE, "guard");
         this.entityData.define(DATA_SCALE, 1.0F);
-        this.entityData.define(DATA_TRIGGERED_ANIMATION, "");
     }
 
     public static AttributeSupplier.Builder createAttributes() {
@@ -80,55 +78,35 @@ public class CustomNPCEntity extends PathfinderMob {
     }
 
     public void triggerAnimation(String animName) {
-        this.entityData.set(DATA_TRIGGERED_ANIMATION, animName);
-    }
-
-    @Override
-    public void tick() {
-        super.tick();
-
-        if (this.level().isClientSide()) {
-            updateClientAnimation();
+        if (!this.level().isClientSide()) {
+            triggerAnim("controller", animName);
         }
-    }
-
-    @OnlyIn(Dist.CLIENT)
-    private void updateClientAnimation() {
-        if (animationController == null) {
-            animationController = new NPCAnimationController();
-        }
-
-        String currentType = getNpcType();
-        if (!currentType.equals(lastNpcType)) {
-            lastNpcType = currentType;
-            Map<String, AnimationDefinition> anims = ModelCache.getAnimations(currentType, "animations/npc/" + currentType + ".animation.json");
-            animationController.setAnimations(anims);
-        }
-
-        String triggeredAnim = this.entityData.get(DATA_TRIGGERED_ANIMATION);
-        if (triggeredAnim != null && !triggeredAnim.isEmpty()) {
-            animationController.playTemporaryAnimation(triggeredAnim);
-            this.entityData.set(DATA_TRIGGERED_ANIMATION, "");
-        }
-
-        double horizSpeedSqr = this.getDeltaMovement().x * this.getDeltaMovement().x + this.getDeltaMovement().z * this.getDeltaMovement().z;
-        boolean isMoving = horizSpeedSqr > 0.001D;
-
-        animationController.update(0.05F, isMoving);
-    }
-
-    @OnlyIn(Dist.CLIENT)
-    public NPCAnimationController getAnimationController() {
-        return animationController;
-    }
-
-    @OnlyIn(Dist.CLIENT)
-    public BlockbenchModel getModel() {
-        return ModelCache.getModel(getNpcType(), "models/npc/" + getNpcType() + ".bbmodel");
     }
 
     public ResourceLocation getTextureLocation() {
         return AssetTextureResolver.resolveEntityTexture(getNpcType());
+    }
+
+    @Override
+    public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
+        AnimationController<CustomNPCEntity> controller = new AnimationController<>(this, "controller", 5, event -> {
+            if (event.isMoving()) {
+                return event.setAndContinue(WALK_ANIM);
+            }
+            return event.setAndContinue(IDLE_ANIM);
+        });
+
+        controller.triggerableAnim("attack", RawAnimation.begin().thenPlay("attack"));
+        controller.triggerableAnim("greet", RawAnimation.begin().thenPlay("greet"));
+        controller.triggerableAnim("torch", RawAnimation.begin().thenPlay("torch"));
+        controller.triggerableAnim("grab", RawAnimation.begin().thenPlay("grab"));
+
+        controllers.add(controller);
+    }
+
+    @Override
+    public AnimatableInstanceCache getAnimatableInstanceCache() {
+        return cache;
     }
 
     @Override

@@ -36,12 +36,12 @@ public class AssetCommands {
 
         for (String npc : npcs) {
             checked++;
-            String modelPath = "/assets/mundodetronos/models/npc/" + npc + ".bbmodel";
+            String geoModelPath = "/assets/mundodetronos/geckolib/models/entity/" + npc + ".geo.json";
             String animPath = "/assets/mundodetronos/animations/npc/" + npc + ".animation.json";
             String texPath = "/assets/mundodetronos/textures/entity/" + npc + ".png";
             String eggItemPath = "/assets/mundodetronos/models/item/" + npc + "_spawn_egg.json";
 
-            if (AssetCommands.class.getResource(modelPath) == null) errors.add("Missing model: " + modelPath);
+            if (AssetCommands.class.getResource(geoModelPath) == null) errors.add("Missing GeckoLib geo model: " + geoModelPath);
             if (AssetCommands.class.getResource(animPath) == null && !"pirate".equals(npc)) errors.add("Missing anim: " + animPath);
             if (AssetCommands.class.getResource(texPath) == null) errors.add("Missing texture: " + texPath);
             if (AssetCommands.class.getResource(eggItemPath) == null) errors.add("Missing spawn egg item model: " + eggItemPath);
@@ -60,10 +60,10 @@ public class AssetCommands {
 
         final int totalChecked = checked;
         if (errors.isEmpty()) {
-            source.sendSuccess(() -> Component.literal("Asset Validation OK! Checked " + totalChecked + " assets (pack.mcmeta, NPCs, blocks, item models). Zero missing references!"), true);
+            source.sendSuccess(() -> Component.literal("GeckoLib Asset Validation OK! Checked " + totalChecked + " assets (pack.mcmeta, GeoModels, animations, textures, blockstates). Zero missing references!"), true);
             return 1;
         } else {
-            source.sendFailure(Component.literal("Asset Validation Failed (" + errors.size() + " errors):\n" + String.join("\n", errors)));
+            source.sendFailure(Component.literal("GeckoLib Asset Validation Failed (" + errors.size() + " errors):\n" + String.join("\n", errors)));
             return 0;
         }
     }

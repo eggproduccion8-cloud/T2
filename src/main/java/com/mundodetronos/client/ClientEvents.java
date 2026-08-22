@@ -1,7 +1,7 @@
 package com.mundodetronos.client;
 
 import com.mundodetronos.MundoDeTronos;
-import com.mundodetronos.client.render.CustomNPCRenderer;
+import com.mundodetronos.client.render.CustomNPCGeoRenderer;
 import com.mundodetronos.registry.ModEntities;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -13,6 +13,6 @@ public class ClientEvents {
 
     @SubscribeEvent
     public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
-        event.registerEntityRenderer(ModEntities.NPC_ENTITY.get(), CustomNPCRenderer::new);
+        event.registerEntityRenderer(ModEntities.NPC_ENTITY.get(), CustomNPCGeoRenderer::new);
     }
 }
