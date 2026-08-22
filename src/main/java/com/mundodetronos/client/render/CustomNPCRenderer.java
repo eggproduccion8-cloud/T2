@@ -80,10 +80,22 @@ public class CustomNPCRenderer extends EntityRenderer<CustomNPCEntity> {
 
         poseStack.translate(-pivot.x() / 16.0F, -pivot.y() / 16.0F, -pivot.z() / 16.0F);
 
-        Matrix4f poseMatrix = poseStack.last().pose();
-
         for (ModelCube cube : bone.getCubes()) {
+            poseStack.pushPose();
+
+            Vector3f origin = cube.getOrigin();
+            Vector3f cubeRot = cube.getRotation();
+
+            poseStack.translate(origin.x() / 16.0F, origin.y() / 16.0F, origin.z() / 16.0F);
+            if (cubeRot.z() != 0) poseStack.mulPose(com.mojang.math.Axis.ZP.rotationDegrees(cubeRot.z()));
+            if (cubeRot.y() != 0) poseStack.mulPose(com.mojang.math.Axis.YP.rotationDegrees(cubeRot.y()));
+            if (cubeRot.x() != 0) poseStack.mulPose(com.mojang.math.Axis.XP.rotationDegrees(cubeRot.x()));
+            poseStack.translate(-origin.x() / 16.0F, -origin.y() / 16.0F, -origin.z() / 16.0F);
+
+            Matrix4f poseMatrix = poseStack.last().pose();
             renderCube(cube, poseMatrix, buffer, packedLight, packedOverlay, texW, texH);
+
+            poseStack.popPose();
         }
 
         for (ModelBone child : bone.getChildren()) {

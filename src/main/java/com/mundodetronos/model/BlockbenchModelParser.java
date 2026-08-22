@@ -134,7 +134,8 @@ public class BlockbenchModelParser {
                     v2 = uvArr.get(3).getAsFloat();
                 }
                 int rotationDeg = faceObj.has("rotation") ? faceObj.get("rotation").getAsInt() : 0;
-                faces.put(entry.getKey(), new ModelCube.Face(u1, v1, u2, v2, rotationDeg));
+                int textureIdx = faceObj.has("texture") && !faceObj.get("texture").isJsonNull() ? faceObj.get("texture").getAsInt() : 0;
+                faces.put(entry.getKey(), new ModelCube.Face(u1, v1, u2, v2, rotationDeg, textureIdx));
             }
         }
 
