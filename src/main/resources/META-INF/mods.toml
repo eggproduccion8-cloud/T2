@@ -28,6 +28,6 @@ Mundo de Tronos - Mod Base Forge 1.20.1
 [[dependencies.${mod_id}]]
     modId="geckolib"
     mandatory=true
-    versionRange="[4.4,)"
+    versionRange="[4.8.4,)"
     ordering="NONE"
     side="BOTH"
