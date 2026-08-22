@@ -1,0 +1,49 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "mundodetronos:block/crate_lvl2"
+    },
+    "facing=south": {
+      "model": "mundodetronos:block/crate_lvl2",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mundodetronos:block/crate_lvl2",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "mundodetronos:block/crate_lvl2",
+      "y": 90
+    },
+    "facing=north,open=false": {
+      "model": "mundodetronos:block/crate_lvl2"
+    },
+    "facing=south,open=false": {
+      "model": "mundodetronos:block/crate_lvl2",
+      "y": 180
+    },
+    "facing=west,open=false": {
+      "model": "mundodetronos:block/crate_lvl2",
+      "y": 270
+    },
+    "facing=east,open=false": {
+      "model": "mundodetronos:block/crate_lvl2",
+      "y": 90
+    },
+    "facing=north,open=true": {
+      "model": "mundodetronos:block/crate_lvl2"
+    },
+    "facing=south,open=true": {
+      "model": "mundodetronos:block/crate_lvl2",
+      "y": 180
+    },
+    "facing=west,open=true": {
+      "model": "mundodetronos:block/crate_lvl2",
+      "y": 270
+    },
+    "facing=east,open=true": {
+      "model": "mundodetronos:block/crate_lvl2",
+      "y": 90
+    }
+  }
+}

@@ -4,6 +4,7 @@ import com.mundodetronos.MundoDeTronos;
 import com.mundodetronos.model.BlockbenchModel;
 import com.mundodetronos.model.ModelCache;
 import com.mundodetronos.animation.AnimationDefinition;
+import com.mundodetronos.util.AssetTextureResolver;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -127,7 +128,7 @@ public class CustomNPCEntity extends PathfinderMob {
     }
 
     public ResourceLocation getTextureLocation() {
-        return new ResourceLocation(MundoDeTronos.MOD_ID, "textures/entity/" + getNpcType() + ".png");
+        return AssetTextureResolver.resolveEntityTexture(getNpcType());
     }
 
     @Override
