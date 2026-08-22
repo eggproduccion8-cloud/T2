@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "mundodetronos:block/desk"
+    },
+    "facing=south": {
+      "model": "mundodetronos:block/desk",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mundodetronos:block/desk",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "mundodetronos:block/desk",
+      "y": 90
+    }
+  }
+}
