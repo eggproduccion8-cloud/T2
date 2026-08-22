@@ -10,7 +10,7 @@ public class CustomNPCGeoModel extends GeoModel<CustomNPCEntity> {
 
     @Override
     public ResourceLocation getModelResource(CustomNPCEntity animatable) {
-        return new ResourceLocation(MundoDeTronos.MOD_ID, "geckolib/models/entity/" + animatable.getNpcType() + ".geo.json");
+        return new ResourceLocation(MundoDeTronos.MOD_ID, "geo/" + animatable.getNpcType() + ".geo.json");
     }
 
     @Override
