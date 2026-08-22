@@ -96,10 +96,16 @@ public class CustomNPCEntity extends PathfinderMob implements GeoEntity {
             return event.setAndContinue(IDLE_ANIM);
         });
 
+        // Guard animations
         controller.triggerableAnim("attack", RawAnimation.begin().thenPlay("attack"));
-        controller.triggerableAnim("greet", RawAnimation.begin().thenPlay("greet"));
+        controller.triggerableAnim("grabsword", RawAnimation.begin().thenPlay("grabsword"));
+        controller.triggerableAnim("grabtorch", RawAnimation.begin().thenPlay("grabtorch"));
         controller.triggerableAnim("torch", RawAnimation.begin().thenPlay("torch"));
-        controller.triggerableAnim("grab", RawAnimation.begin().thenPlay("grab"));
+
+        // General Vol.1 / Vol.2 animations
+        controller.triggerableAnim("greet", RawAnimation.begin().thenPlay("greet"));
+        controller.triggerableAnim("fidget", RawAnimation.begin().thenPlay("fidget"));
+        controller.triggerableAnim("alone", RawAnimation.begin().thenPlay("alone"));
 
         controllers.add(controller);
     }
